@@ -1,0 +1,16 @@
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-4" *ngFor=" let cap_name1 of cap_names1; let i = index; ">
+      <h4>{{cap_name1}}</h4>
+      <img src="/assets/images/{{cap_name1}}.jpg" class="img-responsive margin" style="width:100%" alt="{{cap_name1}}" [routerLink]=" ['/caps', i+1] " data-toggle="tooltip" title="{{cap_name1}}">
+    </div>
+    <div class="col-sm-4" *ngFor=" let cap_name2 of cap_names2; let i = index; ">
+      <h4>{{cap_name2}}</h4>
+      <img src="/assets/images/{{cap_name2}}.jpg" class="img-responsive margin" style="width:100%" alt="{{cap_name2}}" [routerLink]=" ['/caps', i+4] " data-toggle="tooltip" title="{{cap_name2}}">
+    </div>
+    <div class="col-sm-4">
+      <h4>{{cap_names3}}</h4>
+      <img src="/assets/images/{{cap_names3}}.jpg" class="img-responsive margin" style="width:100%" alt="{{cap_names3}}" [routerLink]=" ['/caps', 7] " data-toggle="tooltip" title="{{cap_names3}}">
+    </div>
+  </div>  
+</div>

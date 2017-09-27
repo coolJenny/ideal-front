@@ -155,6 +155,8 @@ main{
 .cancer .panel-group a:hover{ color: white; }
 .cancer .panel-body{ padding: 10px 10px 10px 60px !important; }
 .cancer .panel-body .form-inline{ margin: 15px; }
+.cancer .panel-body .indent1 { margin-left: 30px; }
+.cancer .panel-body .indent2 { margin-left: 60px; }
 .cancer .panel-body .form-inline label{ margin: 0 15px; }
 .cancer .panel-footer{ background-color: #F5F5F5; }
 .cancer .footer{ float: right; }

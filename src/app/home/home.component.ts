@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
 	public id: number;
 
 	cap_names = [ 'Ewing sarcoma biopsy', 'Ewing sarcoma resection', 'Extragonadal germ cell tumor biopsy/resection',
-	'Hepatoblastoma biopsy/resection', 'Kidney tumors biopsy/resection', 'Neuroblastoma biopsy/resection', 'Rhabdomyosarcoma biopsy/resection' ];
+	'Hepatoblastoma biopsy/resection', 'Neuroblastoma biopsy/resection', 'Rhabdomyosarcoma biopsy/resection', 'Kidney tumors biopsy/resection' ];
 
 	tr11 = ['Bone and soft tissue', 'Breast', 'Central nervous system', 'Endocrine'];
 	tr12 = ['Gastrointestinal', 'Genitourinary', 'Gynecologic', 'Head and neck'];

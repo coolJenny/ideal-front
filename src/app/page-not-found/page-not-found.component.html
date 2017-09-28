@@ -1,3 +1,6 @@
-<h2>
-  page-not-found works!
-</h2>
+<div class="pageerror container-fluid text-center">
+  <h1>This page can’t be found</h1>
+  <p>No webpage was found for the web address: <strong id="errorurl">{{currentUrl}}</strong></p>
+  <div class="error-code">HTTP ERROR 404</div>
+  <button class="btn btn-primary" (click)="refresh()">Reload</button>
+</div>

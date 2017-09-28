@@ -1,0 +1,7 @@
+.pageerror{
+	margin: 120px 50px;
+	padding: 50px 45px;
+}
+.pageerror p, .error-code, button{
+	margin: 20px 0;
+}

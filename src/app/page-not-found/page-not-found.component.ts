@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-page-not-found',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageNotFoundComponent implements OnInit {
 
-  constructor() { }
+	private currentUrl: string;
 
-  ngOnInit() {
+  constructor(@Inject(DOCUMENT) private document: any) { 
+  	this.currentUrl = this.document.location.href;
   }
 
+  ngOnInit() {
+  	
+  }
+
+  refresh(): void{
+  	window.location.reload();
+  }
 }

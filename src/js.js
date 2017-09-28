@@ -1,0 +1,1 @@
+document.getElementById("errorurl").innerHTML = window.location.href;

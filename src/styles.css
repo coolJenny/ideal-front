@@ -178,6 +178,9 @@ main{
     color: #777777;
     padding: 20px 0 0 0;
 }
+.mfooter a:hover{
+    color: #337ab7;
+}
 .pulse{
     visibility: visible; 
     animation-duration: 2s; 

@@ -8,7 +8,7 @@ import { DOCUMENT } from '@angular/common';
 })
 export class PageNotFoundComponent implements OnInit {
 
-	private currentUrl: string;
+	public currentUrl: string;
 
   constructor(@Inject(DOCUMENT) private document: any) { 
   	this.currentUrl = this.document.location.href;

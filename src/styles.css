@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+/*@import "../node_modules/materialize-css/dist/css/materialize.css";*/
+body{ background-color: #eceff1; }
 label{ font-weight: normal !important; }
 a{ text-decoration: none !important; }
 .navbar{
@@ -52,7 +54,7 @@ a{ text-decoration: none !important; }
 .wow{ 
     border: none !important;
 }
-.tablepanel{ padding: 20px 0 !important }
+.tablepanel{ margin: 20px 0 !important }
 .wow .panel-body{ padding: 0; }
 .wow .panel-body .row{ margin: 0; }
 .container .panel-group h3{
@@ -136,44 +138,7 @@ main{
     padding: 0px;
     margin: 0px;
 }
-.cancer{ padding: 50px 0 50px 0 !important; }
-.cancer a{ color: black; }
-.cancer .panel-group .hvr-sweep-to-right{ 
-    width: 100%;
-    cursor: pointer;
-}
-.cancer .well{ background-color: #d9edf7; }
-.cancer .panel-group .title{ 
-    background-color: #337ab7; 
-    color: white;
-}
-.cancer .panel-group .hvr-sweep-to-right {
-    -webkit-transition-duration: 2s !important;
-    transition-duration: 2s !important;
-}
-.cancer .panel-group .hvr-sweep-to-right:hover{ color: white !important; }
-.cancer .panel-group a:hover{ color: white; }
-.cancer .panel-body{ padding: 10px 10px 10px 60px !important; }
-.cancer .panel-body .form-inline{ margin: 15px; }
-.cancer .panel-body .indent1 { margin-left: 30px; }
-.cancer .panel-body .indent2 { margin-left: 60px; }
-.cancer .panel-body .form-inline label{ margin: 0 15px; }
-.cancer .panel-footer{ background-color: #F5F5F5; }
-.cancer .footer{ float: right; }
-.cancer .showbtn{ 
-    background-color: #d9edf7;
-    line-height: 3.5;
-    height: 50px;
-    width: 90px;
-    margin: 5px;
-    float: left;
-    transition: ease-in-out all .5s;
-    -webkit-transition: ease-in-out all .5s;
-    -moz-transition: ease-in-out all .5s;
-}
-.showbtn:last-child{
-    margin-right: 0px;
-}
+
 .mfooter{
     color: #777777;
     padding: 20px 0 0 0;

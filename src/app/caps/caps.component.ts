@@ -51,7 +51,7 @@ export class CapsComponent implements OnInit, OnDestroy {
 	// }
 
 	public generatePDF() {
-		let element = document.getElementById('pdfData1');
+		let element = document.getElementById('pdfData');
 		let options = { pagesplit: false };
 		let pdf = new jsPDF('p', 'pt', 'a4', 2);
 

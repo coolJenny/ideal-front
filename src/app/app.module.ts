@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MaterializeModule } from 'angular2-materialize';
 
-import { PdfmakeModule } from 'ng-pdf-make';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -57,7 +56,7 @@ const routes: Routes = [
     
   ],
   exports: [RouterModule],
-  providers: [PdfmakeModule],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

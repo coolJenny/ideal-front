@@ -5,7 +5,6 @@ import { MaterializeModule } from 'angular2-materialize';
 import { Headers, Http, Response, HttpModule } from '@angular/http';
 
 import * as jsPDF from 'jspdf';
-import { PdfmakeService } from 'ng-pdf-make/pdfmake/pdfmake.service';
 
 @Component({
 	selector: 'app-caps',

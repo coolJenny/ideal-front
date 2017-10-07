@@ -16,13 +16,8 @@ import { CapListComponent } from './cap-list/cap-list.component';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent
-  },
-  { 
-    path: '',   
-    redirectTo: '/home', 
-    pathMatch: 'full' 
   },
   {
     path: 'caps/:id',

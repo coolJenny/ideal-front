@@ -53,6 +53,13 @@ $(document).ready(function() {
         });
     }
 
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 500) {
+            $('.bfooter').fadeIn();
+        } else {
+            $('.bfooter').fadeOut();
+        }
+    });
 
     $(window).scroll(function(){
         if ($(this).scrollTop() > 500) {
@@ -64,7 +71,7 @@ $(document).ready(function() {
     
     //Click event to scroll to top
     $('.scrollToTop').click(function(){
-        $('html, body').animate({scrollTop : 0},"1000");
+        $('html, body').animate({scrollTop : 0},"900");
         return false;
     });
 });

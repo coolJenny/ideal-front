@@ -31,7 +31,7 @@ const routes: Routes = [
   {
     path: 'caplist',
     component: CapListComponent
-  },
+  },  
   {
     path: 'about',
     component: AboutComponent

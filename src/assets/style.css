@@ -1,18 +1,8 @@
 /*@import "../node_modules/materialize-css/dist/css/materialize.css";*/
 
-.cancer{
-	width: 100%;
-	background-color: #eceff1;
-	margin-top: 130px;
-}
-input{
-	border: none;
-	border-bottom: 1px solid gray;
-	border-radius: 0px;
-}
 #pdfData{
 	background-color: white;
-	padding: 10px 20px;
+	padding: 10px 50px;
 }
 #pdfData .title{ padding: 10px 0; }
 #pdfData .subgroups{ padding: 10px 5px; }
@@ -26,4 +16,11 @@ input{
 #pdfData .editableText{
 	margin: 0 10px;
 	text-decoration: underline;
+}
+
+.bfooter{
+	position:fixed;
+	bottom:10%;
+	right:20%;
+	display:none;
 }

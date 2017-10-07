@@ -1,49 +1,70 @@
-function demoFromHTML() {
-    var pdf = new jsPDF('p', 'pt', 'letter');
-    // source can be HTML-formatted string, or a reference
-    // to an actual DOM element from which the text will be scraped.
-    source = $('#pdfData')[0];
-
-    // we support special element handlers. Register them with jQuery-style 
-    // ID selector for either ID or node name. ("#iAmID", "div", "span" etc.)
-    // There is no support for any other type of selectors 
-    // (class, of compound) at this time.
-
-    margins = {
-    top: 80,
-    bottom: 60,
-    left: 40,
-    width: 522
-    };
-    // all coords and widths are in jsPDF instance's declared units
-    // 'inches' in this case
-    pdf.fromHTML(
-    source, // HTML string or DOM elem ref.
-    margins.left, // x coord
-    margins.top,
-    pdf.save('Test.pdf')
-    );
-}
-
-function testAttribute(element, attribute) {
-    var test = document.createElement(element);
-    if (attribute in test) {
-        return true;
-    }
-    else 
-        return false;
-}
-
 $(document).ready(function() {
 
-    // $( "input[value='Hot Fuzz']" ).next().text( "Hot Fuzz" );
+    tinymce.init({
+        selector: '#pdfData',
+        toolbar: false,
+        menubar: false,
+        statusbar: false,
+        inline: true,
+        // formats: {
+        //     underline: {inline : '.editableText', 'classes' : 'underline', exact : true}
+        // }
+    });
+    $('#convert').click(function(e) {
+        
+        var contentDocument = tinymce.get('pdfData').getDoc();
+        var content = '<!DOCTYPE html>' + contentDocument.documentElement.outerHTML;
+        var converted = htmlDocx.asBlob(content);
+          
+        saveAs(converted, 'test.docx');
+        //open(converted);
+    });
 
-    $(':radio').click(function(e) {
+    function generatePDF() {
+        alert('sdklajkljlk');
 
-        //$('.txt1').attr('placeholder', 'Type your answer...');;
+        var element = $('#pdfData');
 
-        if (!testAttribute('input', 'autofocus'))
-        $('.txt1').autofocus = true;
+        var options = { pagesplit: false };
+        var pdf = new jsPDF('p', 'pt', 'a4');
+
+        pdf.addHTML(element, 0, 0, options, () => {
+            pdf.save('test.pdf');
+        });
+    } 
+
+
+
+    function demoFromHTML() {
+        $('body').scrollTop(0);
+        var pdf = new jsPDF();
+
+        var win = window.open('', '_blank');
+
+        var specialElementHandlers = {
+            '#passby': function (element, renderer) {
+                return true;
+            }
+        };
+        
+        pdf.fromHTML($('#pdfData').get(0), 15, 15, {
+            'width': 170,
+            'elementHandlers': specialElementHandlers
+        });
+    }
+
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 500) {
+            $('.scrollToTop').fadeIn();
+        } else {
+            $('.scrollToTop').fadeOut();
+        }
+    });
+    
+    //Click event to scroll to top
+    $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},"1000");
+        return false;
     });
 });
-    

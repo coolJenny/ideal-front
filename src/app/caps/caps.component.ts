@@ -50,9 +50,10 @@ export class CapsComponent implements OnInit, OnDestroy {
 	// }
 
 	public generatePDF() {
+
 		let element = document.getElementById('pdfData');
 		let options = { pagesplit: false };
-		let pdf = new jsPDF('p', 'pt', 'a4', 2);
+		let pdf = new jsPDF('p', 'pt', 'a4');
 
 		pdf.addHTML(element, 0, 0, options, () => {
 			pdf.save('test.pdf');
@@ -60,19 +61,8 @@ export class CapsComponent implements OnInit, OnDestroy {
 
 	}
 
-	// public downloadPDF(html){
-	// 	let headers = new Headers({'Content-Type': 'application/json'});
-	// 	let options = new RequestOptions({ headers: headers });
-	// 	let body = { htmlString: JSON.stringify(html) };
-
-	// 	this.http.post(this.baseUrl + 'path/to/', body, options).subscribe(
-	// 			() => {
-	// 				alert('success');
-	// 				this.loading = false;
-	// 				window.open(this.baseUrl + 'file.pdf', '_blank', '');					
-	// 			},
-	// 			err => { console.error(err) }
-	// 		);
-	// }
+	public generateWord(){
+		alert('sorry, please wait.');
+	}
 
 }

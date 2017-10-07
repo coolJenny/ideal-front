@@ -1,29 +1,5 @@
 /*@import "../node_modules/materialize-css/dist/css/materialize.css";*/
-
-.cancer{
-	width: 100%;
-	background-color: #eceff1;
-	margin-top: 130px;
-}
-input{
-	border: none;
-	border-bottom: 1px solid gray;
-	border-radius: 0px;
-}
-#pdfData{
-	background-color: white;
-	padding: 30px 50px;
-}
-#pdfData .title{ padding: 10px 0; }
-#pdfData .subgroups{ padding: 10px 5px; }
-#pdfData .subgroups .itemgroup{ padding: 5px 0; }
-#pdfData .subgroups .itemgroup>div{ padding: 5px 0; }
-#pdfData .subgroups .itemgroup input[type="text"]{ margin: 0 10px; }
-#pdfData .subgroups .itemgroup input[type="radio"]{ margin-right: 10px; }
-#pdfData .subgroups .itemgroup .indent1 { margin-left: 50px; }
-#pdfData .subgroups .itemgroup .indent2 { margin-left: 90px; }
-#pdfData .comment{ font-size: 14px; }
-.footer{ 
-	float: right;
-	margin: 30px 0;
+.navbar-fixed-bottom{
+	padding-left: 70%;
+	top: 86%;
 }

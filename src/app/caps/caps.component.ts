@@ -4,7 +4,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { MaterializeModule } from 'angular2-materialize';
 import { Headers, Http, Response, HttpModule } from '@angular/http';
 
+import * as $ from 'jquery';
 import * as jsPDF from 'jspdf';
+
+declare var tinymce: any;
+declare var htmlDocx: any;
 
 @Component({
 	selector: 'app-caps',
@@ -17,6 +21,7 @@ export class CapsComponent implements OnInit, OnDestroy {
 	public id: number;
 	private sub: any;
 
+
 	cap_title = [ 'EWING SARCOMA: Biopsy', 'EWING SARCOMA: Resection', 'EXTRAGONADAL GERM CELL TUMOR: Biopsy, Resection',
 	'HEPATOBLASTOMA (PEDIATRIC LIVER): Biopsy, Resection', 'NEUROBLASTOMA: Resection, Biopsy', 'RHABDOMYOSARCOMA AND RELATED NEOPLASMS: Biopsy, Resection', 'KIDNEY, PEDIATRIC RENAL TUMORS: Biopsy, Resection' ];
 	cap_content: object;
@@ -24,18 +29,28 @@ export class CapsComponent implements OnInit, OnDestroy {
 
 
 	constructor(private route:ActivatedRoute) { 
-
+		
 	}
 
 	ngOnInit() {
 		this.sub = this.route.params.subscribe(params => {
 			this.id = +params['id'];			
 		});
+
+		tinymce.init({
+	        selector: '#convertData',
+	        toolbar: false,
+	        menubar: false,
+	        statusbar: false,
+	        inline: true
+	    });
 	}
 
 	ngOnDestroy() {
 		this.sub.unsubscribe();
 	}
+
+
 
 	// public openPDF(){
 	// 	const element = document.getElementById('pdfData');
@@ -49,10 +64,14 @@ export class CapsComponent implements OnInit, OnDestroy {
 	// 	this.pdfmake.open();
 	// }
 
-	public generatePDF() {
+	public generatePdf() {
 
-		let element = document.getElementById('pdfData');
-		let options = { pagesplit: false };
+		let element = $('#convertData');
+		
+		let options = { 
+			pagesplit: true
+		};
+
 		let pdf = new jsPDF('p', 'pt', 'a4');
 
 		pdf.addHTML(element, 0, 0, options, () => {
@@ -61,8 +80,13 @@ export class CapsComponent implements OnInit, OnDestroy {
 
 	}
 
-	public generateWord(){
-		alert('sorry, please wait.');
+	public generateDoc(){
+
+		let contentDocument = tinymce.get('convertData').getDoc();
+        let content = '<!DOCTYPE html>' + contentDocument.documentElement.outerHTML;
+        let converted = htmlDocx.asBlob(content);
+          
+        //saveAs(converted, 'test.docx');
 	}
 
 }

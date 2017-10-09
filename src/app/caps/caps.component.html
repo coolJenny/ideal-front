@@ -6,7 +6,7 @@
 			<p>Based on AJCC/UICC TNM, 7th edition</p>
 			<p class="form-inline">Case No: &nbsp;<u>{{id}}</u></p>
 		</div>
-		<div id="pdfData" class="">
+		<div id="convertData" class="">
 			<div class="title">
 				<h3 class="text-center ">{{cap_title[0]}}</h3>
 				<p>Select a single response unless otherwise indicated.</p>
@@ -151,7 +151,7 @@
 			<p>Based on AJCC/UICC TNM, 7th edition</p>
 			<p class="form-inline">Case No: &nbsp;<u>{{id}}</u></p>
 		</div>
-		<div id="pdfData" class="">
+		<div id="convertData" class="">
 			<div class="title">
 				<h3 class="text-center ">{{cap_title[1]}}</h3>
 				<p>Select a single response unless otherwise indicated.</p>
@@ -296,7 +296,7 @@
 			<p>Based on AJCC/UICC TNM, 7th edition</p>
 			<p class="form-inline">Case No: &nbsp;<u>{{id}}</u></p>
 		</div>
-		<div id="pdfData" class="">
+		<div id="convertData" class="">
 			<div class="title">
 				<h3 class="text-center ">{{cap_title[2]}}</h3>
 				<p>Select a single response unless otherwise indicated.</p>
@@ -529,7 +529,7 @@
 			<p>No AJCC/UICC TNM Staging system.</p>
 			<p class="form-inline">Case No: &nbsp;<u>{{id}}</u></p>
 		</div>
-		<div id="pdfData" class="">
+		<div id="convertData" class="">
 			<div class="title">
 				<h3 class="text-center ">{{cap_title[3]}}</h3>
 				<p>Select a single response unless otherwise indicated.</p>
@@ -769,7 +769,7 @@
 			<p>No AJCC/UICC TNM Staging system.</p>
 			<p class="form-inline">Case No: &nbsp;<u>{{id}}</u></p>
 		</div>
-		<div id="pdfData" class="">
+		<div id="convertData" class="">
 			<div class="title">
 				<h3 class="text-center ">{{cap_title[4]}}</h3>
 				<p>Select a single response unless otherwise indicated.</p>
@@ -975,7 +975,7 @@
 			<p>No AJCC/UICC TNM Staging system.</p>
 			<p class="form-inline">Case No: &nbsp;<u>{{id}}</u></p>
 		</div>
-		<div id="pdfData">
+		<div id="convertData">
 			<div class="title">
 				<h3 class="text-center ">{{cap_title[5]}}</h3>
 				<p>Select a single response unless otherwise indicated.</p>
@@ -1209,7 +1209,7 @@
 			<p>No AJCC/UICC TNM Staging system.</p>
 			<p class="form-inline">Case No: &nbsp;<u>{{id}}</u></p>
 		</div>
-		<div id="pdfData">
+		<div id="convertData">
 				<div class="title">
 					<h3 class="text-center ">{{cap_title[6]}}</h3>
 					<p><i>Note: For bilateral tumors, complete a separate case summary for each kidney.</i></p>
@@ -1449,8 +1449,8 @@
 
 
 <div class="bfooter">
-	<button id="convert" class="btn btn-info active" data-toggle="tooltip" title="Word Answer">Preview</button>
-	<button (click)="generatePDF()" class="btn btn-info active" data-toggle="tooltip" title="PDF Answer">PDF</button>
+	<button id="convertDoc" (click)="generateDoc()" class="btn btn-info active" data-toggle="tooltip" title="Word Answer">Preview</button>
+	<button id="convertPdf" (click)="generatePdf()" class="btn btn-info active" data-toggle="tooltip" title="PDF Answer">PDF</button>
 	<a *ngIf="id == 1" target="_blank" href="/assets/references/Ewing Sarcoma Biopsy CAP.pdf" class="btn btn-info active" data-toggle="tooltip" title="Entire CAP Protocol">CAP</a>
 	<a *ngIf="id == 2" target="_blank" href="/assets/references/Ewing Sarcoma Resection CAP.pdf" class="btn btn-info active" data-toggle="tooltip" title="Entire CAP Protocol">CAP</a>
 	<a *ngIf="id == 3" target="_blank" href="/assets/references/Extragonadal germ cell tumor CAP.pdf" class="btn btn-info active" data-toggle="tooltip" title="Entire CAP Protocol">CAP</a>

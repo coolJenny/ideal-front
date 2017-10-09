@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     tinymce.init({
-        selector: '#pdfData',
+        selector: '#convertData',
         toolbar: false,
         menubar: false,
         statusbar: false,
@@ -10,9 +10,9 @@ $(document).ready(function() {
         //     underline: {inline : '.editableText', 'classes' : 'underline', exact : true}
         // }
     });
-    $('#convert').click(function(e) {
+    $('#convertDoc').click(function(e) {
         
-        var contentDocument = tinymce.get('pdfData').getDoc();
+        var contentDocument = tinymce.get('convertData').getDoc();
         var content = '<!DOCTYPE html>' + contentDocument.documentElement.outerHTML;
         var converted = htmlDocx.asBlob(content);
           
@@ -20,41 +20,75 @@ $(document).ready(function() {
         //open(converted);
     });
 
-    function generatePDF() {
-        alert('sdklajkljlk');
+    // $('#convertPdf').click(function(e){
+    //     var pdf = new jsPDF();
 
-        var element = $('#pdfData');
+    //     pdf.text('This is a test', 10, 10)
+    //     pdf.viewerPreferences({'FitWindow': true}, true)
+    //     pdf.save("viewerPreferences.pdf")
 
-        var options = { pagesplit: false };
-        var pdf = new jsPDF('p', 'pt', 'a4');
+    //     pdf.viewerPreferences({
+    //       'HideWindowUI': true,
+    //       'PrintArea': 'CropBox',
+    //       'NumCopies': 10
+    //     })
+    // });
 
-        pdf.addHTML(element, 0, 0, options, () => {
-            pdf.save('test.pdf');
-        });
-    } 
+    // function generatePDF() {
+    //     $('body').scrollTop(0);
+    //     var element = $('#pdfData');
+
+    //     var options = { pagesplit: true };
+    //     var pdf = new jsPDF('p', 'pt', 'a4');
+
+    //     pdf.addHTML(element, 0, 0, options, () => {
+    //         pdf.save('test.pdf');
+    //     });
+
+    //     // var doc = new jsPDF();
+
+    //     // // We'll make our own renderer to skip this editor
+    //     // var specialElementHandlers = {
+    //     //     '#editor': function(element, renderer){
+    //     //         return false;
+    //     //     },
+    //     //     '.controls': function(element, renderer){
+    //     //         return false;
+    //     //     }
+    //     // };
+
+    //     // // All units are in the set measurement for the document
+    //     // // This can be changed to "pt" (points), "mm" (Default), "cm", "in"
+    //     // doc.fromHTML($('body').get(0), 15, 15, {
+    //     //     'width': 370, 
+    //     //     'elementHandlers': specialElementHandlers
+    //     // });
+    // } 
 
 
 
-    function demoFromHTML() {
-        $('body').scrollTop(0);
-        var pdf = new jsPDF();
+    // function demoFromHTML() {
+    //     $('body').scrollTop(0);
+    //     var pdf = new jsPDF();
 
-        var win = window.open('', '_blank');
+    //     var win = window.open('', '_blank');
 
-        var specialElementHandlers = {
-            '#passby': function (element, renderer) {
-                return true;
-            }
-        };
+    //     var specialElementHandlers = {
+    //         '#passby': function (element, renderer) {
+    //             return true;
+    //         }
+    //     };
         
-        pdf.fromHTML($('#pdfData').get(0), 15, 15, {
-            'width': 170,
-            'elementHandlers': specialElementHandlers
-        });
-    }
+    //     pdf.fromHTML($('#pdfData').get(0), 15, 15, {
+    //         'width': 170,
+    //         'elementHandlers': specialElementHandlers
+    //     });
+    // }
+
+
 
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 500) {
+        if ($(this).scrollTop() < 300) {
             $('.bfooter').fadeIn();
         } else {
             $('.bfooter').fadeOut();
@@ -62,7 +96,7 @@ $(document).ready(function() {
     });
 
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 500) {
+        if ($(this).scrollTop() > 400) {
             $('.scrollToTop').fadeIn();
         } else {
             $('.scrollToTop').fadeOut();

@@ -1,26 +1,26 @@
 /*@import "../node_modules/materialize-css/dist/css/materialize.css";*/
 
-#pdfData{
+#convertData{
 	background-color: white;
 	padding: 10px 50px;
 }
-#pdfData .title{ padding: 10px 0; }
-#pdfData .subgroups{ padding: 10px 5px; }
-#pdfData .subgroups .itemgroup{ padding: 5px 0; }
-#pdfData .subgroups .itemgroup>div{ padding: 5px 0; }
-#pdfData .subgroups .itemgroup input[type="text"]{ margin: 0 10px; }
-#pdfData .subgroups .itemgroup input[type="radio"]{ margin-right: 10px; }
-#pdfData .subgroups .itemgroup .indent1 { margin-left: 50px; }
-#pdfData .subgroups .itemgroup .indent2 { margin-left: 90px; }
-#pdfData .comment{ font-size: 14px; }
-#pdfData .editableText{
+#convertData .title{ padding: 10px 0; }
+#convertData .subgroups{ padding: 10px 5px; }
+#convertData .subgroups .itemgroup{ padding: 5px 0; }
+#convertData .subgroups .itemgroup>div{ padding: 5px 0; }
+#convertData .subgroups .itemgroup input[type="text"]{ margin: 0 10px; }
+#convertData .subgroups .itemgroup input[type="radio"]{ margin-right: 10px; }
+#convertData .subgroups .itemgroup .indent1 { margin-left: 50px; }
+#convertData .subgroups .itemgroup .indent2 { margin-left: 90px; }
+#convertData .comment{ font-size: 14px; }
+#convertData .editableText{
 	margin: 0 10px;
 	text-decoration: underline;
 }
 
 .bfooter{
 	position:fixed;
-	bottom:10%;
-	right:20%;
+	bottom:5%;
+	right:5%;
 	display:none;
 }

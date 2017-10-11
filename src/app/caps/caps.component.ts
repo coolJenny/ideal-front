@@ -7,11 +7,9 @@ import { Headers, Http, Response, HttpModule } from '@angular/http';
 import * as $ from 'jquery';
 import * as jsPDF from 'jspdf';
 import * as tinymce from 'tinymce';
-import * as fileSaver from 'file-Saver';
+import * as fileSaver from 'file-saver';
 
-declare var tinymce: any;
 declare var htmlDocx: any;
-declare var fileSaver: any;
 
 @Component({
 	selector: 'app-caps',

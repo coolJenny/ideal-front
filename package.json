@@ -23,6 +23,7 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "@types/file-saver": "0.0.1",
     "@types/jspdf": "^1.1.31",
     "angular2-materialize": "^15.1.9",
     "codemirror": "^5.30.0",

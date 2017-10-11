@@ -11,8 +11,6 @@ import { CapsComponent } from './caps/caps.component';
 import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CapListComponent } from './cap-list/cap-list.component';
-import { EwingSarcomaBiopsyComponent } from './ewing-sarcoma-biopsy/ewing-sarcoma-biopsy.component';
-
 const routes: Routes = [
   {
     path: '',
@@ -30,10 +28,6 @@ const routes: Routes = [
     path: 'about',
     component: AboutComponent
   },
-  {
-    path: 'ewing-sarcoma-biopsy',
-    component: EwingSarcomaBiopsyComponent
-  },
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -44,8 +38,7 @@ const routes: Routes = [
     CapsComponent,
     AboutComponent,
     PageNotFoundComponent,
-    CapListComponent,
-    EwingSarcomaBiopsyComponent
+    CapListComponent
   ],
   imports: [
     BrowserModule,

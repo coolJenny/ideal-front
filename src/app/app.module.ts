@@ -30,6 +30,10 @@ const routes: Routes = [
     path: 'about',
     component: AboutComponent
   },
+  {
+    path: 'ewing-sarcoma-biopsy',
+    component: EwingSarcomaBiopsyComponent
+  },
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -40,7 +44,8 @@ const routes: Routes = [
     CapsComponent,
     AboutComponent,
     PageNotFoundComponent,
-    CapListComponent
+    CapListComponent,
+    EwingSarcomaBiopsyComponent
   ],
   imports: [
     BrowserModule,

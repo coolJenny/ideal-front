@@ -10,6 +10,7 @@ import * as tinymce from 'tinymce';
 import * as fileSaver from 'file-saver';
 
 declare var htmlDocx: any;
+declare var tinymce: any;
 
 @Component({
 	selector: 'app-caps',

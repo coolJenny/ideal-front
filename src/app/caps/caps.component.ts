@@ -9,8 +9,8 @@ import * as jsPDF from 'jspdf';
 import * as tinymce from 'tinymce';
 import * as fileSaver from 'file-saver';
 
-declare var htmlDocx: any;
 declare var tinymce: any;
+declare var htmlDocx: any;
 
 @Component({
 	selector: 'app-caps',

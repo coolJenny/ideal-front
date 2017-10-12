@@ -19,7 +19,9 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/codemirror/lib/codemirror.css",
+        "../node_modules/codemirror/theme/monokai.css"
       ],
       "scripts": [ 
         "../node_modules/jspdf/dist/jspdf.min.js",

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Http } from '@angular/http'
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,5 @@ export class AppComponent {
   title = 'app';
   caps_name;
 
-  constructor() {
-  	// http.get('http://localhost:3000/caps.json').subscribe(res => this.caps_name = res.json());
-  }
+  constructor() { }
 }

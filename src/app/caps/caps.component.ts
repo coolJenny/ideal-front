@@ -6,6 +6,8 @@ import { Headers, Http, Response, HttpModule } from '@angular/http';
 
 import * as $ from 'jquery';
 import * as jsPDF from 'jspdf';
+import * as tinymce from 'tinymce';
+import * as fileSaver from 'file-saver';
 
 declare var tinymce: any;
 declare var htmlDocx: any;
@@ -19,7 +21,7 @@ declare var htmlDocx: any;
 
 export class CapsComponent implements OnInit, OnDestroy {
 	public id: number;
-	private sub: any;
+	public sub: any;
 
 
 	cap_title = [ 'EWING SARCOMA: Biopsy', 'EWING SARCOMA: Resection', 'EXTRAGONADAL GERM CELL TUMOR: Biopsy, Resection',
@@ -27,12 +29,11 @@ export class CapsComponent implements OnInit, OnDestroy {
 	cap_content: object;
 	file_name: string;
 
-
 	constructor(private route:ActivatedRoute) { 
 		
 	}
 
-	ngOnInit() {
+	ngOnInit() {		
 		this.sub = this.route.params.subscribe(params => {
 			this.id = +params['id'];			
 		});
@@ -42,7 +43,7 @@ export class CapsComponent implements OnInit, OnDestroy {
 	        toolbar: false,
 	        menubar: false,
 	        statusbar: false,
-	        inline: true
+			inline: true
 	    });
 	}
 
@@ -50,43 +51,23 @@ export class CapsComponent implements OnInit, OnDestroy {
 		this.sub.unsubscribe();
 	}
 
-
-
-	// public openPDF(){
-	// 	const element = document.getElementById('pdfData');
-	// 	var docDefinition = { content: element };
-	// 	this.pdfmake.docDefinition = {
- //            pageSize: 'a4',
- //            pageOrientation: 'portrait',
- //            content: [element],
- //            styles: {}
- //        };
-	// 	this.pdfmake.open();
-	// }
+	public generateDoc(){
+		let contentDocument = tinymce.get('convertData').getDoc();
+        let content = '<!DOCTYPE html>' + contentDocument.documentElement.outerHTML;
+		let converted = htmlDocx.asBlob(content);   
+		let ext = this.id + '.docx';       
+        fileSaver.saveAs(converted, ext);
+	}
 
 	public generatePdf() {
-
-		let element = $('#convertData');
-		
+		let element = $('#convertData');		
 		let options = { 
 			pagesplit: true
 		};
-
-		let pdf = new jsPDF('p', 'pt', 'a4');
-
+		let pdf = new jsPDF('p', 'cm', 'a3');
+		let ext = this.id + '.pdf';
 		pdf.addHTML(element, 0, 0, options, () => {
-			pdf.save('test.pdf');
+			pdf.save(ext);
 		});
-
 	}
-
-	public generateDoc(){
-
-		let contentDocument = tinymce.get('convertData').getDoc();
-        let content = '<!DOCTYPE html>' + contentDocument.documentElement.outerHTML;
-        let converted = htmlDocx.asBlob(content);
-          
-        //saveAs(converted, 'test.docx');
-	}
-
 }

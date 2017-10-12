@@ -1,0 +1,26 @@
+/*@import "../node_modules/materialize-css/dist/css/materialize.css";*/
+
+#convertData{
+	background-color: white;
+	padding: 10px 50px;
+}
+#convertData .title{ padding: 10px 0; }
+#convertData .subgroups{ padding: 10px 5px; }
+#convertData .subgroups .itemgroup{ padding: 5px 0; }
+#convertData .subgroups .itemgroup>div{ padding: 5px 0; }
+#convertData .subgroups .itemgroup input[type="text"]{ margin: 0 10px; }
+#convertData .subgroups .itemgroup input[type="radio"]{ margin-right: 10px; }
+#convertData .subgroups .itemgroup .indent1 { margin-left: 50px; }
+#convertData .subgroups .itemgroup .indent2 { margin-left: 90px; }
+#convertData .comment{ font-size: 14px; }
+#convertData .editableText{
+	margin: 0 10px;
+	text-decoration: underline;
+}
+
+.bfooter{
+	position:fixed;
+	bottom:5%;
+	right:5%;
+	display:none;
+}

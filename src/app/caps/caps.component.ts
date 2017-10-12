@@ -21,7 +21,7 @@ declare var htmlDocx: any;
 
 export class CapsComponent implements OnInit, OnDestroy {
 	public id: number;
-	private sub: any;
+	public sub: any;
 
 
 	cap_title = [ 'EWING SARCOMA: Biopsy', 'EWING SARCOMA: Resection', 'EXTRAGONADAL GERM CELL TUMOR: Biopsy, Resection',
@@ -43,8 +43,7 @@ export class CapsComponent implements OnInit, OnDestroy {
 	        toolbar: false,
 	        menubar: false,
 	        statusbar: false,
-			inline: true,
-			plugins: "noneditable"
+			inline: true
 	    });
 	}
 

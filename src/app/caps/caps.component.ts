@@ -1,8 +1,9 @@
-import { Component, OnInit, OnDestroy, Inject, Directive, ElementRef, Input } from '@angular/core';
+import { Component, OnInit, OnDestroy, Inject, Directive, ElementRef, Input, AfterViewInit } from '@angular/core';
 
 import { ActivatedRoute, Router } from '@angular/router';
 import { MaterializeModule } from 'angular2-materialize';
 import { Headers, Http, Response, HttpModule } from '@angular/http';
+
 
 import * as $ from 'jquery';
 import * as jsPDF from 'jspdf';
@@ -19,10 +20,10 @@ declare var htmlDocx: any;
 	providers: [{ provide: 'Window', useValue: window }]
 })
 
-export class CapsComponent implements OnInit, OnDestroy {
+export class CapsComponent implements AfterViewInit, OnInit, OnDestroy {
 	public id: number;
 	public sub: any;
-
+	public path;
 
 	cap_title = [ 'EWING SARCOMA: Biopsy', 'EWING SARCOMA: Resection', 'EXTRAGONADAL GERM CELL TUMOR: Biopsy, Resection',
 	'HEPATOBLASTOMA (PEDIATRIC LIVER): Biopsy, Resection', 'NEUROBLASTOMA: Resection, Biopsy', 'RHABDOMYOSARCOMA AND RELATED NEOPLASMS: Biopsy, Resection', 'KIDNEY, PEDIATRIC RENAL TUMORS: Biopsy, Resection' ];
@@ -33,13 +34,10 @@ export class CapsComponent implements OnInit, OnDestroy {
 		
 	}
 
-	ngOnInit() {		
-		this.sub = this.route.params.subscribe(params => {
-			this.id = +params['id'];			
-		});
-
+	ngAfterViewInit() {
 		tinymce.init({
-	        selector: '#convertData',
+			selector: '#convertData',
+			skin_url: '/assets/skins/lightgray',
 	        toolbar: false,
 	        menubar: false,
 	        statusbar: false,
@@ -47,8 +45,15 @@ export class CapsComponent implements OnInit, OnDestroy {
 	    });
 	}
 
+	ngOnInit() {		
+		this.sub = this.route.params.subscribe(params => {
+			this.id = +params['id'];			
+		});		
+	}
+
 	ngOnDestroy() {
 		this.sub.unsubscribe();
+		tinymce.remove();
 	}
 
 	public generateDoc(){
@@ -67,7 +72,9 @@ export class CapsComponent implements OnInit, OnDestroy {
 		let pdf = new jsPDF('p', 'cm', 'a3');
 		let ext = this.id + '.pdf';
 		pdf.addHTML(element, 0, 0, options, () => {
-			pdf.save(ext);
+			this.path = pdf.save(ext);
+			
 		});
+	
 	}
 }

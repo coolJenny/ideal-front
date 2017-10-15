@@ -13,9 +13,22 @@
 #convertData .subgroups .itemgroup .indent1 { margin-left: 50px; }
 #convertData .subgroups .itemgroup .indent2 { margin-left: 90px; }
 #convertData .comment{ font-size: 14px; }
-#convertData .editableText{
+#convertData .mceEditable{
 	margin: 0 10px;
 	text-decoration: underline;
+}
+#convertData input[type="radio"], #convertData h4 a{
+	cursor: pointer;
+}
+#convertData h4:hover{
+	text-decoration: underline
+}
+
+.mce-content-body *{
+	outline: none !important;
+}
+.mce-content-body a[data-mce-selected], .mce-content-body code[data-mce-selected], .mce-content-body b[data-mce-selected], .mce-content-body i[data-mce-selected], .mce-content-body em[data-mce-selected], .mce-content-body strong[data-mce-selected], .mce-content-body sup[data-mce-selected], .mce-content-body sub[data-mce-selected] {
+    background: white !important;
 }
 
 .bfooter{
@@ -23,4 +36,11 @@
 	bottom:5%;
 	right:5%;
 	display:none;
+}
+#convertData .form-inline u{
+	display: none;
+}
+
+#chk:checked ~ u{
+	display: inline;
 }

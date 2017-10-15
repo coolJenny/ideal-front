@@ -3,6 +3,7 @@ import { Component, OnInit, OnDestroy, Inject, Directive, ElementRef, Input, Aft
 import { ActivatedRoute, Router } from '@angular/router';
 import { MaterializeModule } from 'angular2-materialize';
 import { Headers, Http, Response, HttpModule } from '@angular/http';
+import { RadioControlValueAccessor } from '@angular/forms';
 
 
 import * as $ from 'jquery';
@@ -37,12 +38,12 @@ export class CapsComponent implements AfterViewInit, OnInit, OnDestroy {
 	ngAfterViewInit() {
 		tinymce.init({
 			selector: '#convertData',
-			skin_url: '/assets/skins/lightgray',
 	        toolbar: false,
 	        menubar: false,
 	        statusbar: false,
-			inline: true
-	    });
+			inline: true,
+			plugins: 'noneditable'
+		});
 	}
 
 	ngOnInit() {		
@@ -77,4 +78,8 @@ export class CapsComponent implements AfterViewInit, OnInit, OnDestroy {
 		});
 	
 	}
+
+	// public myclick(){
+	// 	alert("sdfjkl");
+	// }
 }

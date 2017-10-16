@@ -58,11 +58,18 @@ export class CapsComponent implements AfterViewInit, OnInit, OnDestroy {
 	}
 
 	public generateDoc(){
-		let contentDocument = tinymce.get('convertData').getDoc();
-        let content = '<!DOCTYPE html>' + contentDocument.documentElement.outerHTML;
-		let converted = htmlDocx.asBlob(content);   
-		let ext = this.id + '.docx';       
-        fileSaver.saveAs(converted, ext);
+		let content = tinymce.get('convertData').getContent();	
+		let converted = htmlDocx.asBlob(content);
+		let fileName = this.id + '.docx';	
+		fileSaver.saveAs(converted, fileName);
+		//tinymce.activeEditor.dom.remove(tinymce.activeEditor.dom.select('input'));
+		//tinymce.DOM.hide('chk');
+		// let contentDocument = tinymce.get('convertData').getDoc();
+        // let content = '<!DOCTYPE html>' + contentDocument.documentElement.outerHTML;
+		// let converted = htmlDocx.asBlob(content);   
+		// let fileName = this.id + '.docx';       
+		// fileSaver.saveAs(converted, fileName);
+		//window.location.reload();
 	}
 
 	public generatePdf() {
@@ -70,7 +77,7 @@ export class CapsComponent implements AfterViewInit, OnInit, OnDestroy {
 		let options = { 
 			pagesplit: true
 		};
-		let pdf = new jsPDF('p', 'cm', 'a3');
+		let pdf = new jsPDF('p', 'pt', 'a3');
 		let ext = this.id + '.pdf';
 		pdf.addHTML(element, 0, 0, options, () => {
 			this.path = pdf.save(ext);
@@ -78,8 +85,4 @@ export class CapsComponent implements AfterViewInit, OnInit, OnDestroy {
 		});
 	
 	}
-
-	// public myclick(){
-	// 	alert("sdfjkl");
-	// }
 }

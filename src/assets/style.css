@@ -39,6 +39,8 @@
 }
 #convertData .form-inline u{
 	display: none;
+	border-bottom: 1px solid red;
+	text-decoration: none;
 }
 
 #chk:checked ~ u{

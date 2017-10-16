@@ -27,8 +27,9 @@
 .mce-content-body *{
 	outline: none !important;
 }
-.mce-content-body a[data-mce-selected], .mce-content-body code[data-mce-selected], .mce-content-body b[data-mce-selected], .mce-content-body i[data-mce-selected], .mce-content-body em[data-mce-selected], .mce-content-body strong[data-mce-selected], .mce-content-body sup[data-mce-selected], .mce-content-body sub[data-mce-selected] {
-    background: white !important;
+
+.mce-edit-focus {
+	outline: none !important;
 }
 
 .bfooter{
@@ -39,7 +40,7 @@
 }
 #convertData .form-inline u{
 	display: none;
-	border-bottom: 1px solid red;
+	border-bottom: 1px solid #1e90ff;
 	text-decoration: none;
 }
 

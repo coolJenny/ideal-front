@@ -65,7 +65,6 @@
 }
 
 #convertData select, label, input{
-	color: #1e90ff;
 	text-indent: 5px;
 }
 #convertData select:hover{

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { Routes, RouterModule } from '@angular/router';
 import { MaterializeModule } from 'angular2-materialize';
@@ -51,7 +52,8 @@ const routes: Routes = [
     BrowserModule,
     RouterModule.forRoot(routes),
     MaterializeModule,
-    CodemirrorModule    
+    CodemirrorModule,
+    FormsModule    
   ],
   exports: [RouterModule],
   providers: [],

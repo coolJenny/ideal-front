@@ -14,143 +14,130 @@
 			<div class="groups mceNonEditable">
 				<div class="subgroups">
 					<h4 class="">Procedure (Note B)</h4>
-					<select class="selection" (change)="onChange($event)">
-						<option>Core needle biopsy</option>
-						<option>Incisional biopsy</option>
-						<option>Excisional biopsy</option>
-						<option [value]="true">Other (specify):</option>
-						<option>Not specified</option>
-					</select>
-					<input id="add" type="text" autofocus>										
+					<div class="itemgroup">
+						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk"><u class="mceEditable" autofocus="true" id="af">&nbsp; &nbsp; </u>Core needle biopsy</div>	
+						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk"><u class="mceEditable" autofocus="true">&nbsp; &nbsp; </u>Incisional biopsy</div>
+						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk"><u class="mceEditable" autofocus="true">&nbsp; &nbsp; </u>Excisional biopsy</div>
+						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk"><u class="mceEditable" autofocus="true">&nbsp; &nbsp; </u>Other (specify):<u class="mceEditable">&nbsp; &nbsp;</u></div>
+						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk"><u class="mceEditable" autofocus="true">&nbsp; &nbsp; </u>Not specified</div>
+					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="">Tumor Site</h4>
-					<select class="selection" (change)="onChange($event)">
-						<option [value]="true" selected>Specify site (if known):</option>
-						<option>Not specified</option>
-					</select>
-					<input id="add" type="text" autofocus>
+					<div class="itemgroup">
+						<div class="form-inline"><input type="radio" name="optradio2" class="mceEditable" id="chk">Specify site (if known):<u class="mceEditable">&nbsp; &nbsp; </u></div>
+						<div class="form-inline"><input type="radio" name="optradio2" class="mceEditable" id="chk"><u class="mceEditable">&nbsp; &nbsp; </u>Not specified</div>
+					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="">Tumor Size (Note B)</h4>
-					<select class="selection" (change)="onChange($event)">
-						<option [value]="true">Greatest dimension:</option> cm
-						<option [value]="true">+ Additional dimensions:</option> cm
-						<option [value]="true">Cannot be determined (explain):</option>
-					</select>
-					<input id="add" type="text" autofocus>
+					<div class="itemgroup">
+						<div class="form-inline"><input type="radio" name="optradio" class="mceEditable" id="chk">Greatest dimension:<u class="mceEditable">&nbsp; &nbsp; </u>cm</div>
+						<div class="form-inline"><input type="radio" name="optradio" class="mceEditable" id="chk">+ Additional dimensions:<u class="mceEditable">&nbsp; &nbsp; </u>*<u class="mceEditable">&nbsp; &nbsp; </u>cm</div>
+						<div class="form-inline"><input type="radio" name="optradio" class="mceEditable" id="chk"><u class="mceEditable">&nbsp; &nbsp; </u>Cannot be determined (explain):<u class="mceEditable">&nbsp; &nbsp; </u></div>
+					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="">+ Extent of Osseous Tumors (select all that apply)</h4>
-					<select class="selection" (change)="onChange($event)">
-						<option>Diaphysis</option>
-						<option>Metaphysis</option>
-						<option>Medullary cavity</option>
-						<option>Tumor extension into soft tissue</option>
-						<option [value]="true">Other (specify):</option>
-						<option>Not specified</option>
-						<option>Cannot be determined</option>
-					</select>
-					<input id="add" type="text" autofocus>
+					<div class="itemgroup">
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Diaphysis</div>					
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Metaphysis</div>					
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Medullary cavity</div>					
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Tumor extension into soft tissue</div>	
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Other (specify):<u class="mceEditable">&nbsp; &nbsp; </u></div>				
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Not specified</div>					
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Cannot be determined</div>					
+					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="">+ Extent of Primary Extraosseous Tumors (select all that apply) (Note C)</h4>
-					<select class="selection" (change)="onChange($event)">
-						<option>Dermal</option>
-						<option>Subcutaneous/suprafascial</option>
-						<option>Subfascial</option>
-						<option>Intramuscular</option>
-						<option>Intraabdominal/pelvic</option>
-						<option>Retroperitoneal</option>
-						<option>Chest wall</option>
-						<option [value]="true">Other (specify):</option>
-						<option>Not specified</option>
-						<option>Cannot be determined</option>
-					</select>
-					<input id="add" type="text" autofocus>
+					<div class="itemgroup">
+						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Dermal</div>					
+						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Subcutaneous/suprafascial</div>					
+						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Subfascial</div>					
+						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Intramuscular</div>	
+						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Intraabdominal/pelvic</div>	
+						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Retroperitoneal</div>	
+						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Chest wall</div>	
+						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Other (specify):<u class="mceEditable">&nbsp; &nbsp; </u></div>				
+						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Not specified</div>					
+						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Cannot be determined</div>					
+					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="">Margins (for excisional biopsy only) (Note D)</h4>
-					<select class="selection" (change)="onChange($event)">
-						<option>Cannot be assessed</option>
-						<option>Uninvolved by tumor</option>
-						<option [value]="true">Distance of tumor from closest bone margin: cm (required only if applicable)</option>
-						<option [value]="true">Distance of tumor from closest soft tissue margin: cm (required only if applicable)</option>
-						<option [value]="true">Distance of tumor from closest other (eg, parenchymal) margin: cm (required only if applicable)</option>
-						<option>Involved by tumor</option>
-						<option [value]="true">Specify margin(s):</option>
-					</select>
-					<input id="add" type="text" autofocus>
+					<div class="itemgroup">
+						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk"><u class="mceEditable">&nbsp; &nbsp; </u>Cannot be assessed</div>	
+						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk"><u class="mceEditable">&nbsp; &nbsp; </u>Uninvolved by tumor</div>	
+						<div class="form-inline indent1"><input type="radio" name="optradio51" class="mceEditable" id="chk">Distance of tumor from closest bone margin:<u class="mceEditable">&nbsp; &nbsp; </u>cm (required only if applicable)</div>					
+						<div class="form-inline indent1"><input type="radio" name="optradio51" class="mceEditable" id="chk">Distance of tumor from closest soft tissue margin:<u class="mceEditable">&nbsp; &nbsp; </u>cm (required only if applicable)</div>	
+						<div class="form-inline indent1"><input type="radio" name="optradio51" class="mceEditable" id="chk">Distance of tumor from closest other (eg, parenchymal) margin:<u class="mceEditable">&nbsp; &nbsp; </u>cm (required only if applicable)</div>			
+						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk"><u class="mceEditable">&nbsp; &nbsp; </u>Involved by tumor</div>	
+						<div class="form-inline indent1"><input type="radio" name="optradio52" class="mceEditable" id="chk">Specify margin(s):<u class="mceEditable">&nbsp; &nbsp; </u></div>
+					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="">+Lymph-Vascular Invasion (Note E)</h4>
-					<select class="selection" (change)="onChange($event)">
-						<option>+Not identified</option>
-						<option>+Present</option>
-						<option>+Cannot be determined</option>
-					</select>
-					<input id="add" type="text" autofocus>
+					<div class="itemgroup">
+						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Not identified</div>
+						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Present</div>
+						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Cannot be determined</div>
+					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="">Prebiopsy Treatment (select all that apply)</h4>
-					<select class="selection" (change)="onChange($event)">
-						<option>No known prebiopsy therapy</option>
-						<option>Chemotherapy performed</option>
-						<option>Radiation therapy performed</option>
-						<option>Therapy performed, type not specified</option>
-						<option>Not specified</option>						
-					</select>
-					<input id="add" type="text" autofocus>
+					<div class="itemgroup">
+						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk"><u class="mceEditable">&nbsp; &nbsp; </u>No known prebiopsy therapy</div>					
+						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk"><u class="mceEditable">&nbsp; &nbsp; </u>Chemotherapy performed</div>
+						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk"><u class="mceEditable">&nbsp; &nbsp; </u>Radiation therapy performed</div>
+						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk"><u class="mceEditable">&nbsp; &nbsp; </u>Therapy performed, type not specified</div>
+						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk"><u class="mceEditable">&nbsp; &nbsp; </u>Not specified</div>
+					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="">Treatment Effect (required only if applicable) (Note F)</h4>
-					<select class="selection" (change)="onChange($event)">
-						<option>No known prebiopsy therapy (not applicable)</option>
-						<option>No necrosis identified</option>
-						<option>Necrosis present</option>
-						<option [value]="true">+ Percent tumor necrosis: %</option>
-						<option>Percent tumor necrosis cannot be determined</option>						
-					</select>
-					<input id="add" type="text" autofocus>
+					<div class="itemgroup">
+						<div class="form-inline"><input type="radio" name="optradio8" class="mceEditable" id="chk"><u class="mceEditable">&nbsp; &nbsp; </u>No known prebiopsy therapy (not applicable)</div>					
+						<div class="form-inline"><input type="radio" name="optradio8" class="mceEditable" id="chk"><u class="mceEditable">&nbsp; &nbsp; </u>No necrosis identified</div>
+						<div class="form-inline"><input type="radio" name="optradio8" class="mceEditable" id="chk"><u class="mceEditable">&nbsp; &nbsp; </u>Necrosis present</div>
+						<div class="form-inline indent1"><input type="radio" name="optradio8" class="mceEditable" id="chk">+ Percent tumor necrosis:<u class="mceEditable">&nbsp; &nbsp; </u>%</div>
+						<div class="form-inline"><input type="radio" name="optradio8" class="mceEditable" id="chk"><u class="mceEditable">&nbsp; &nbsp; </u>Percent tumor necrosis cannot be determined</div>
+					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="">+ Additional Pathologic Findings</h4>
-					<label style="margin-left: 20px;">+ Specify:</label>
-					<input type="text">
+					<div class="itemgroup">
+						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk">+ Specify:<u class="mceEditable">&nbsp; &nbsp; </u></div>	
+					</div>
 				</div>
 				<div class="subgroups">
-					<h4 class="">+ Ancillary Studies (select all that apply) (Note G)</h4>	
-					<i style="display: block;">Note: Results of these studies may not be available at the time of the final report</i>
-					<select class="selection" (change)="onChange($event)">
-						<option>+Not performed</option>
-						<option>+Pending</option>
-						<option>+EWSR1 rearrangement present</option>
-
-						<option>+Fusion partner not known</option>
-						<option>+Fusion partner known</option>
-						<option>+FLI1</option>
-						<option>+ERG</option>
-						<option [value]="true">+Other (specify):</option>
-
-						<option [value]="true">+Other (non-EWSR1 variant translocation) (specify):</option>
-						<option>+No rearrangement identified</option>						
-					</select>
-					<input id="add" type="text" autofocus>
+					<h4 class="">+ Ancillary Studies (select all that apply) (Note G)</h4>		
+					<div class="itemgroup">
+						<i style="display: block;">Note: Results of these studies may not be available at the time of the final report</i>
+						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Not performed</div>					
+						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Pending</div>
+						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>EWSR1 rearrangement present</div>
+						<div class="form-inline indent1"><input type="radio" name="optradio101" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Fusion partner not known</div>
+						<div class="form-inline indent1"><input type="radio" name="optradio101" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Fusion partner known</div>
+						<div class="form-inline indent2"><input type="radio" name="optradio102" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>FLI1</div>
+						<div class="form-inline indent2"><input type="radio" name="optradio102" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>ERG</div>
+						<div class="form-inline indent2"><input type="radio" name="optradio102" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Other (specify):<u class="mceEditable">&nbsp; &nbsp; </u></div>
+						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Other (non-EWSR1 variant translocation) (specify):<u class="mceEditable">&nbsp; &nbsp; </u></div>
+						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>No rearrangement identified</div>	
+					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="">+ Method</h4>
-					<select class="selection" (change)="onChange($event)">
-						<option>+Conventional karyotyping</option>
-						<option>+Fluorescent in situ hybridization (FISH)</option>
-						<option>+Reverse transcriptase polymerase chain reaction (RT-PCR)</option>
-						<option [value]="true">+Other (specify):</option>
-					</select>
-					<input id="add" type="text" autofocus>
+					<div class="itemgroup">
+						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Conventional karyotyping</div>
+						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Fluorescent in situ hybridization (FISH)</div>
+						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Reverse transcriptase polymerase chain reaction (RT-PCR)</div>
+						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk">+<u class="mceEditable">&nbsp; &nbsp; </u>Other (specify):<u class="mceEditable">&nbsp; &nbsp; </u></div>						
+					</div>
 				</div>				
 			</div>
 			<div class="mceNonEditable">
 				<h4>+ Comment(s)</h4>
-				<input type="text" class="comments">
 				<i class="comment">Data elements preceded by symbol(+) are not required. However, these elements may be
 				clinically important but are not yet validated or regularly used in patient management.</i>
 			</div>			

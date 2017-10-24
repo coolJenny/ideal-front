@@ -60,15 +60,24 @@ export class CapsComponent implements AfterViewInit, OnInit, OnDestroy {
 		tinymce.remove();
 	}
 
+	onCollapse(event){
+		var leng = event.target.parentElement.children[1].children.length;
+		for(let i=0; i<leng; i++){
+			event.target.parentElement.children[1].children[i].style.display = 'block';
+		}
+	}
+
 	onChange(event){
-		var pElement = event.target.parentElement;
-		var cElement = event.target.parentElement.querySelector('input')
-		console.log(cElement);
-		var pclassAttr = pElement.attributes.class;
-		if(event.target.value == "true"){
-			cElement.style.display = "inline";
-		}else{			
-			cElement.style.display = "none";
+		var selfElement = event.target.parentElement;
+		var pElement = event.target.parentElement.parentElement;
+		var arr = pElement.children;
+		var n = arr.length;
+		for(let i=0; i<n; i++){
+			if(selfElement.attributes != arr[i].attributes){
+				arr[i].style.display = 'none';
+			} else {
+				selfElement.style.display = 'block';
+			}
 		}
 	}
 

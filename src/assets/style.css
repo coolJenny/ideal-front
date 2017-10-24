@@ -44,14 +44,14 @@
 	display:none;
 }
 #convertData .form-inline u{
-	display: none;
+	
 	border-bottom: 1px solid #1e90ff;
 	text-decoration: none;
 }
 
-#chk:checked ~ u{
+/* #chk:checked ~ u{
 	display: inline;
-}
+} */
 
 #convertData .selection{
 	margin: 3px 10px 0 25px;
@@ -75,3 +75,19 @@
 	display: none;
 }
 
+#convertData .groups .subgroups h4{
+	cursor: pointer;
+	color: blue;
+}
+#convertData .groups .subgroups h4:hover{
+	text-decoration: underline;
+}
+
+#convertData input[type="number"]{
+	margin: 0 5px 0 5px;
+	width: 100px;
+	text-align: center;
+}
+#convertData input[type="text"]{
+	width: 50%;
+}

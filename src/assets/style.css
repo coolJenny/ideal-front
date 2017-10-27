@@ -10,8 +10,14 @@
 #convertData .subgroups .itemgroup>div{ padding: 5px 0; }
 #convertData .subgroups .itemgroup input[type="text"]{ margin: 0 10px; }
 #convertData .subgroups .itemgroup input[type="radio"]{ margin-right: 10px; }
-#convertData .subgroups .itemgroup .indent1 { margin-left: 50px; }
-#convertData .subgroups .itemgroup .indent2 { margin-left: 90px; }
+#convertData .subgroups .itemgroup .indent1 { 
+	margin: 5px 0 5px 50px; 
+	display: none;
+}
+#convertData .subgroups .itemgroup .indent2 { 
+	margin: 5px 0 5px 90px; 
+
+}
 #convertData .comment{ 
 	font-size: 14px; 
 	display: block;
@@ -77,7 +83,6 @@
 
 #convertData .groups .subgroups h4{
 	cursor: pointer;
-	color: blue;
 }
 #convertData .groups .subgroups h4:hover{
 	text-decoration: underline;
@@ -91,3 +96,7 @@
 #convertData input[type="text"]{
 	width: 50%;
 }
+
+/* #chk:checked ~ input[type="text"], input[type="number"]{
+	display: inline;
+} */

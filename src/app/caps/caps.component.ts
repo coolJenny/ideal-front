@@ -68,15 +68,31 @@ export class CapsComponent implements AfterViewInit, OnInit, OnDestroy {
 	}
 
 	onChange(event){
+		var txt = event.target.parentElement.querySelector('input[type="text"]');
+		var num = event.target.parentElement.querySelector('input[type="number"]');
+		// if(txt){			
+		// 	txt.attributes[1].value = true;
+		// }
+		// if(num){
+		// 	num.attributes[1].value = true;
+		// }
+		
 		var selfElement = event.target.parentElement;
+		var childElement = selfElement.querySelectorAll('.indent1');
 		var pElement = event.target.parentElement.parentElement;
 		var arr = pElement.children;
 		var n = arr.length;
 		for(let i=0; i<n; i++){
 			if(selfElement.attributes != arr[i].attributes){
-				arr[i].style.display = 'none';
+				arr[i].style.display = 'none';				
 			} else {
 				selfElement.style.display = 'block';
+				if(childElement){
+					for(let i=0; i<childElement.length; i++){
+						childElement[i].style.display = 'block';
+					}
+				}
+				
 			}
 		}
 	}

@@ -18,14 +18,14 @@
 						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" (click)="onChange($event)" id="chk"> Core needle biopsy</div>	
 						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" (click)="onChange($event)" id="chk"> Incisional biopsy</div>
 						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" (click)="onChange($event)" id="chk"> Excisional biopsy</div>
-						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" (click)="onChange($event)" id="chk"> Other (specify): <input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" (click)="onChange($event)" id="chk"> Other (specify): <input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" (click)="onChange($event)" id="chk"> Not specified</div>
 					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">Tumor Site</h4>
 					<div class="itemgroup" id="demo1">
-						<div class="form-inline"><input type="radio" name="optradio2" class="mceEditable" id="chk" (click)="onChange($event)">Specify site (if known):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio2" class="mceEditable" id="chk" (click)="onChange($event)">Specify site (if known):<input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio2" class="mceEditable" id="chk" (click)="onChange($event)">Not specified</div>
 					</div>
 				</div>
@@ -33,10 +33,10 @@
 					<h4 class="" (click)="onCollapse($event)">Tumor Size (Note B)</h4>
 					<div class="itemgroup">
 						<div class="form-inline">
-							<input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension:<input type="number">cm
-							<div class="form-inline indent1">Additional dimensions:<input type="number">*<input type="number">cm</div>
+							<input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension:<input type="number" class="form-control">cm
+							<div class="form-inline indent1">Additional dimensions:<input type="number" class="form-control">*<input type="number" class="form-control">cm</div>
 						</div>						
-						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -46,7 +46,7 @@
 						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Metaphysis</div>			
 						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Medullary cavity</div>		
 						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Tumor extension into soft tissue</div>	
-						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>				
+						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>				
 						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Not specified</div>		
 						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined</div>					
 					</div>
@@ -61,7 +61,7 @@
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Intraabdominal/pelvic</div>
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Retroperitoneal</div>	
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Chest wall</div>	
-						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>				
+						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>				
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Not specified</div>		
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined</div>	
 					</div>
@@ -72,13 +72,13 @@
 						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be assessed</div>
 						<div class="form-inline">
 							<input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Uninvolved by tumor
-							<div class="form-inline indent1">Distance of tumor from closest bone margin:<input type="number">cm (required only if applicable)</div>					
-							<div class="form-inline indent1">Distance of tumor from closest soft tissue margin:<input type="number">cm (required only if applicable)</div>	
-							<div class="form-inline indent1">Distance of tumor from closest other (eg, parenchymal) margin:<input type="number">cm (required only if applicable)</div>
+							<div class="form-inline indent1">Distance of tumor from closest bone margin:<input type="number" class="form-control">cm (required only if applicable)</div>					
+							<div class="form-inline indent1">Distance of tumor from closest soft tissue margin:<input type="number" class="form-control">cm (required only if applicable)</div>	
+							<div class="form-inline indent1">Distance of tumor from closest other (eg, parenchymal) margin:<input type="number" class="form-control">cm (required only if applicable)</div>
 						</div>									
 						<div class="form-inline">
 							<input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Involved by tumor
-							<div class="form-inline indent1">Specify margin(s):<input type="text"></div>
+							<div class="form-inline indent1">Specify margin(s):<input type="text" class="form-control"></div>
 						</div>							
 					</div>
 				</div>
@@ -107,7 +107,7 @@
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">No necrosis identified</div>
 						<div class="form-inline">
 							<input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Necrosis present
-							<div class="form-inline indent1">Percent tumor necrosis:<input type="number">%</div>
+							<div class="form-inline indent1">Percent tumor necrosis:<input type="number" class="form-control">%</div>
 						</div>						
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Percent tumor necrosis cannot be determined</div>
 					</div>
@@ -115,7 +115,7 @@
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">+ Additional Pathologic Findings</h4>
 					<div class="itemgroup">
-						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)"> Specify:<input type="text"></div>			
+						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)"> Specify:<input type="text" class="form-control"></div>			
 					</div>
 				</div>
 				<div class="subgroups">
@@ -131,10 +131,10 @@
 								<input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange($event)">Fusion partner known
 								<div class="form-inline indent2"><input type="radio" name="optradio1112" class="mceEditable" id="chk" (click)="onChange($event)">FLI1</div>
 								<div class="form-inline indent2"><input type="radio" name="optradio1112" class="mceEditable" id="chk" (click)="onChange($event)">ERG</div>
-								<div class="form-inline indent2"><input type="radio" name="optradio1112" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>
+								<div class="form-inline indent2"><input type="radio" name="optradio1112" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>
 							</div>
 						</div>						
-						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">Other (non-EWSR1 variant translocation) (specify):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">Other (non-EWSR1 variant translocation) (specify):<input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">No rearrangement identified</div>	
 					</div>
 				</div>
@@ -144,7 +144,7 @@
 						<div class="form-inline"><input type="radio" name="optradio12" class="mceEditable" id="chk" (click)="onChange($event)">Conventional karyotyping</div>
 						<div class="form-inline"><input type="radio" name="optradio12" class="mceEditable" id="chk" (click)="onChange($event)">Fluorescent in situ hybridization (FISH)</div>
 						<div class="form-inline"><input type="radio" name="optradio12" class="mceEditable" id="chk" (click)="onChange($event)">Reverse transcriptase polymerase chain reaction (RT-PCR)</div>
-						<div class="form-inline"><input type="radio" name="optradio12" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>						
+						<div class="form-inline"><input type="radio" name="optradio12" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>						
 					</div>
 				</div>
 			</div>
@@ -178,23 +178,23 @@
 						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk" (click)="onChange($event)"> Resection</div>	
 						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk" (click)="onChange($event)"> Amputation (specify type):</div>
 						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk" (click)="onChange($event)"> Limb salvage procedure (specify type):</div>
-						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk" (click)="onChange($event)"> Other (specify): <input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk" (click)="onChange($event)"> Other (specify): <input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk" (click)="onChange($event)"> Not specified</div>
 					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">Tumor Site</h4>
 					<div class="itemgroup" id="demo1">
-						<div class="form-inline"><input type="radio" name="optradio2" class="mceEditable" id="chk" (click)="onChange($event)">Specify site(s):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio2" class="mceEditable" id="chk" (click)="onChange($event)">Specify site(s):<input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio2" class="mceEditable" id="chk" (click)="onChange($event)">Not specified</div>
 					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">Tumor Size (Note B)</h4>
 					<div class="itemgroup">
-						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension:<input type="number">cm</div>
-						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)"> Additional dimensions:<input type="number">*<input type="number">cm</div>
-						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension:<input type="number" class="form-control">cm</div>
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)"> Additional dimensions:<input type="number" class="form-control">*<input type="number" class="form-control">cm</div>
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -204,7 +204,7 @@
 						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Metaphysis</div>			
 						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Medullary cavity</div>		
 						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Tumor extension into soft tissue</div>	
-						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>				
+						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>				
 						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Not specified</div>		
 						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined</div>					
 					</div>
@@ -218,7 +218,7 @@
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Intramuscular</div>	
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Intraabdominal/pelvic</div>
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Retroperitoneal</div>
-						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>				
+						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>				
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Not specified</div>		
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined</div>	
 					</div>
@@ -228,11 +228,11 @@
 					<div class="itemgroup">
 						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be assessed</div>
 						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Uninvolved by tumor</div>	
-						<div class="form-inline indent1"><input type="radio" name="optradio61" class="mceEditable" id="chk" (click)="onChange($event)">Distance of tumor from closest bone margin:<input type="number">cm (required only if applicable)</div>					
-						<div class="form-inline indent1"><input type="radio" name="optradio61" class="mceEditable" id="chk" (click)="onChange($event)">Distance of tumor from closest soft tissue margin:<input type="number">cm (required only if applicable)</div>	
-						<div class="form-inline indent1"><input type="radio" name="optradio61" class="mceEditable" id="chk" (click)="onChange($event)">Distance of tumor from closest other (eg, parenchymal) margin:<input type="number">cm (required only if applicable)</div>			
+						<div class="form-inline indent1"><input type="radio" name="optradio61" class="mceEditable" id="chk" (click)="onChange($event)">Distance of tumor from closest bone margin:<input type="number" class="form-control">cm (required only if applicable)</div>					
+						<div class="form-inline indent1"><input type="radio" name="optradio61" class="mceEditable" id="chk" (click)="onChange($event)">Distance of tumor from closest soft tissue margin:<input type="number" class="form-control">cm (required only if applicable)</div>	
+						<div class="form-inline indent1"><input type="radio" name="optradio61" class="mceEditable" id="chk" (click)="onChange($event)">Distance of tumor from closest other (eg, parenchymal) margin:<input type="number" class="form-control">cm (required only if applicable)</div>			
 						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Involved by tumor</div>	
-						<div class="form-inline indent1"><input type="radio" name="optradio62" class="mceEditable" id="chk" (click)="onChange($event)">Specify margin(s):<input type="text"></div>
+						<div class="form-inline indent1"><input type="radio" name="optradio62" class="mceEditable" id="chk" (click)="onChange($event)">Specify margin(s):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -259,7 +259,7 @@
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">No known prebiopsy therapy (not applicable)</div>					
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">No necrosis identified</div>
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Necrosis present</div>
-						<div class="form-inline indent1"><input type="radio" name="optradio91" class="mceEditable" id="chk" (click)="onChange($event)"> Percent tumor necrosis:<input type="number">%</div>
+						<div class="form-inline indent1"><input type="radio" name="optradio91" class="mceEditable" id="chk" (click)="onChange($event)"> Percent tumor necrosis:<input type="number" class="form-control">%</div>
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Percent tumor necrosis cannot be determined</div>
 					</div>
 				</div>
@@ -274,8 +274,8 @@
 						<div class="form-inline indent1"><input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange($event)">Fusion partner known</div>
 						<div class="form-inline indent2"><input type="radio" name="optradio1112" class="mceEditable" id="chk" (click)="onChange($event)">FLI1</div>
 						<div class="form-inline indent2"><input type="radio" name="optradio1112" class="mceEditable" id="chk" (click)="onChange($event)">ERG</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio1112" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>
-						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">Other (non-EWSR1 variant translocation) (specify):<input type="text"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio1112" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>
+						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">Other (non-EWSR1 variant translocation) (specify):<input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">No rearrangement identified</div>
 						<br>
 						<p>+ Method</p>
@@ -290,19 +290,19 @@
 					<div class="itemgroup">
 						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">No nodes submitted or found</div><br>
 						<i>Number of Lymph Nodes Examined</i>
-						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text"></div>
-						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text" class="form-control"></div>
+						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text" class="form-control"></div>
 						<br>
 						<i>Number of Lymph Nodes Involved</i>
-						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text"></div>
-						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text"></div>					
+						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text" class="form-control"></div>
+						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text" class="form-control"></div>					
 					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">Distant Metastasis (pM) (required only if confirmed pathologically in this case)</h4>
 					<div class="itemgroup">
 						<div class="form-inline"><input type="radio" name="optradio14" class="mceEditable" id="chk" (click)="onChange($event)">Present</div>
-						<div class="form-inline indent1"><input type="radio" name="optradio141" class="mceEditable" id="chk" (click)="onChange($event)">Specify site(s), if known:<input type="text"></div>					
+						<div class="form-inline indent1"><input type="radio" name="optradio141" class="mceEditable" id="chk" (click)="onChange($event)">Specify site(s), if known:<input type="text" class="form-control"></div>					
 					</div>
 				</div>
 				<div class="subgroups">
@@ -315,7 +315,7 @@
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">+ Additional Pathologic Findings</h4>
 					<div class="itemgroup">
-						<div class="form-inline"><input type="radio" name="optradio15" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text"></div>	
+						<div class="form-inline"><input type="radio" name="optradio15" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text" class="form-control"></div>	
 					</div>
 				</div>
 			</div>
@@ -357,7 +357,7 @@
 						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk" (click)="onChange($event)">Wide resection</div>
 
 						<br>
-						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk" (click)="onChange($event)">Not specified</div>
 					</div>
 				</div>
@@ -377,16 +377,16 @@
 						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Mediastinum (pericardium, heart, thymus, and lung)</div>
 						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Retroperitoneum/abdomen</div>
 						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Sacrococcygeal</div>
-						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Not specified</div>
 					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">Tumor Size (Note C)</h4>
 					<div class="itemgroup">
-						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension:<input type="number">cm</div>
-						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)"> Additional dimensions:<input type="number">*<input type="number">cm</div>
-						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension:<input type="number" class="form-control">cm</div>
+						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)"> Additional dimensions:<input type="number" class="form-control">*<input type="number" class="form-control">cm</div>
+						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -397,7 +397,7 @@
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Immature teratoma</div>		
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">
 							Mature or immature teratoma with additional malignant somatic component
-							(specify type, eg, epithelial malignancy, sarcoma):<input type="text">
+							(specify type, eg, epithelial malignancy, sarcoma):<input type="text" class="form-control">
 						</div>
 
 						<br>
@@ -406,8 +406,8 @@
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Yolk sac tumor</div>
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Embryonal carcinoma</div>
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Choriocarcinoma</div>
-						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Mixed germ cell tumor (any combination of the above, with or without teratoma) (specify components):<input type="text"></div>	
-						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>					
+						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Mixed germ cell tumor (any combination of the above, with or without teratoma) (specify components):<input type="text" class="form-control"></div>	
+						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>					
 					</div>
 				</div>
 				<div class="subgroups">
@@ -416,8 +416,8 @@
 						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Grade 1</div>				
 						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Grade 2</div>				
 						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Grade 3</div>				
-						<div class="form-inline indent2"><input type="radio" name="optradio61" class="mceEditable" id="chk" (click)="onChange($event)"> Percent of teratoma composed of immature elements (if applicable):<input type="text"></div>										
-						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>					
+						<div class="form-inline indent2"><input type="radio" name="optradio61" class="mceEditable" id="chk" (click)="onChange($event)"> Percent of teratoma composed of immature elements (if applicable):<input type="text" class="form-control"></div>										
+						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>					
 					</div>
 				</div>
 				<div class="subgroups">
@@ -434,7 +434,7 @@
 						<div class="form-inline"><input type="radio" name="optradio8" class="mceEditable" id="chk" (click)="onChange($event)">No known preoperative therapy (not applicable)</div>					
 						<div class="form-inline"><input type="radio" name="optradio8" class="mceEditable" id="chk" (click)="onChange($event)">Not identified</div>
 						<div class="form-inline"><input type="radio" name="optradio8" class="mceEditable" id="chk" (click)="onChange($event)">Present</div>
-						<div class="form-inline"><input type="radio" name="optradio8" class="mceEditable" id="chk" (click)="onChange($event)"> Percent tumor necrosis:<input type="number">%</div>
+						<div class="form-inline"><input type="radio" name="optradio8" class="mceEditable" id="chk" (click)="onChange($event)"> Percent tumor necrosis:<input type="number" class="form-control">%</div>
 						<div class="form-inline"><input type="radio" name="optradio8" class="mceEditable" id="chk" (click)="onChange($event)">Percent tumor necrosis cannot be determined</div>
 					</div>
 				</div>
@@ -443,7 +443,7 @@
 					<div class="itemgroup">
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Tumor involving coccyx identified</div>					
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Coccyx uninvolved</div>
-						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -451,10 +451,10 @@
 					<div class="itemgroup">
 						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be assessed</div>	
 						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)">Uninvolved by tumor</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio101" class="mceEditable" id="chk" (click)="onChange($event)">Distance of tumor from closest margin:<input type="number">cm</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio101" class="mceEditable" id="chk" (click)="onChange($event)">Specify margin:<input type="text"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio101" class="mceEditable" id="chk" (click)="onChange($event)">Distance of tumor from closest margin:<input type="number" class="form-control">cm</div>
+						<div class="form-inline indent2"><input type="radio" name="optradio101" class="mceEditable" id="chk" (click)="onChange($event)">Specify margin:<input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)">Involved by tumor</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio101" class="mceEditable" id="chk" (click)="onChange($event)">Specify margin:<input type="text"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio101" class="mceEditable" id="chk" (click)="onChange($event)">Specify margin:<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -480,25 +480,25 @@
 
 						<br>
 						<u>Number of Lymph Nodes Examined</u>
-						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text"></div>
-						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text" class="form-control"></div>
+						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text" class="form-control"></div>
 
 						<br>
 						<u>Number of Lymph Nodes Involved</u>
-						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text"></div>
-						<div class="form-inline indent2"><input type="radio" name="optradio131" class="mceEditable" id="chk" (click)="onChange($event)">Specify site(s), if known:<input type="text"></div>
-						<div class="form-inline indent2"><input type="radio" name="optradio131" class="mceEditable" id="chk" (click)="onChange($event)">Histologic type present (specify):<input type="text"></div>
-						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text" class="form-control"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio131" class="mceEditable" id="chk" (click)="onChange($event)">Specify site(s), if known:<input type="text" class="form-control"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio131" class="mceEditable" id="chk" (click)="onChange($event)">Histologic type present (specify):<input type="text" class="form-control"></div>
+						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">Distant Metastasis (required only if confirmed pathologically for this case)</h4>
 					<div class="itemgroup">
 						<div class="form-inline"><input type="radio" name="optradio14" class="mceEditable" id="chk" (click)="onChange($event)">Present</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio141" class="mceEditable" id="chk" (click)="onChange($event)">Specify site(s), if known:<input type="text"></div>
-						<div class="form-inline indent2"><input type="radio" name="optradio141" class="mceEditable" id="chk" (click)="onChange($event)"> Size of largest metastasis (specify):<input type="text"></div>
-						<div class="form-inline indent2"><input type="radio" name="optradio141" class="mceEditable" id="chk" (click)="onChange($event)"> Metastases to other organs (specify):<input type="text"></div>
-						<div class="form-inline indent2"><input type="radio" name="optradio141" class="mceEditable" id="chk" (click)="onChange($event)"> Histologic type present (specify):<input type="text"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio141" class="mceEditable" id="chk" (click)="onChange($event)">Specify site(s), if known:<input type="text" class="form-control"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio141" class="mceEditable" id="chk" (click)="onChange($event)"> Size of largest metastasis (specify):<input type="text" class="form-control"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio141" class="mceEditable" id="chk" (click)="onChange($event)"> Metastases to other organs (specify):<input type="text" class="form-control"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio141" class="mceEditable" id="chk" (click)="onChange($event)"> Histologic type present (specify):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -534,25 +534,25 @@
 						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Normal karyotype</div>
 						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Abnormal karyotype</div>
 						<div class="form-inline indent2"><input type="radio" name="optradio3412" class="mceEditable" id="chk" (click)="onChange($event)">Isochromosome 12p abnormality [i(12p)]</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio3412" class="mceEditable" id="chk" (click)="onChange($event)">Other [eg, del(5q), trisomy 8, 11q23 abnormality] (specify):<input type="text"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio3412" class="mceEditable" id="chk" (click)="onChange($event)">Other [eg, del(5q), trisomy 8, 11q23 abnormality] (specify):<input type="text" class="form-control"></div>
 
 						<div class="form-inline"><input type="radio" name="optradio34" class="mceEditable" id="chk" (click)="onChange($event)">Serologic markers (Note J)</div>
 						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Not available</div>
-						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Serum α-fetoprotein (AFP) (specify level):<input type="text"></div>
-						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Serum human chorionic gonadotropin (HCG) (specify level):<input type="text"></div>
+						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Serum α-fetoprotein (AFP) (specify level):<input type="text" class="form-control"></div>
+						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Serum human chorionic gonadotropin (HCG) (specify level):<input type="text" class="form-control"></div>
 
 						<div class="form-inline"><input type="radio" name="optradio34" class="mceEditable" id="chk" (click)="onChange($event)">Associated syndromes (Note K)</div>
 						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Not known</div>
 						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Klinefelter</div>
 						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Down</div>
-						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Other (eg, intersex, Li Fraumeni) (specify):<input type="text"></div>
+						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Other (eg, intersex, Li Fraumeni) (specify):<input type="text" class="form-control"></div>
 
 						<div class="form-inline"><input type="radio" name="optradio34" class="mceEditable" id="chk" (click)="onChange($event)">Associated malignancy (not part of the extragonadal germ cell tumor)</div>
-						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Leukemia (specify):<input type="text"></div>
-						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Myelodysplastic syndrome (specify):<input type="text"></div>
-						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>
+						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Leukemia (specify):<input type="text" class="form-control"></div>
+						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Myelodysplastic syndrome (specify):<input type="text" class="form-control"></div>
+						<div class="form-inline indent1"><input type="radio" name="optradio341" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>
 
-						<div class="form-inline"><input type="radio" name="optradio34" class="mceEditable" id="chk" (click)="onChange($event)">Other findings (specify):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio34" class="mceEditable" id="chk" (click)="onChange($event)">Other findings (specify):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 			</div>
@@ -598,7 +598,7 @@
 						<div class="form-inline"><input type="radio" name="optradio2" class="mceEditable" id="chk" (click)="onChange($event)"> Explanted liver</div>
 
 						<br>
-						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)"> Other (specify):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)"> Other (specify):<input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)"> Not specified</div>
 					</div>
 				</div>
@@ -608,16 +608,16 @@
 						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Right lobe</div>
 						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Left lobe</div>
 						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Right and left lobes</div>	
-						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Not specified</div>
 					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">Tumor Size (specify for each nodule)</h4>
 					<div class="itemgroup">
-						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension:<input type="number">cm</div>
-						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)"> Additional dimensions:<input type="number">*<input type="number">cm</div>
-						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension:<input type="number" class="form-control">cm</div>
+						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)"> Additional dimensions:<input type="number" class="form-control">*<input type="number" class="form-control">cm</div>
+						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -625,18 +625,18 @@
 					<div class="itemgroup">
 						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Unifocal</div>				
 						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Multifocal</div>
-						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>		
+						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>		
 					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">+ Macroscopic Extent of Tumor (select all that apply)</h4>
 					<div class="itemgroup">
 						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Tumor confined to liver</div>
-						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Tumor extends into adjacent organ(s) (specify):<input type="text"></div>					
+						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Tumor extends into adjacent organ(s) (specify):<input type="text" class="form-control"></div>					
 						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Tumor extends into adjacent soft tissue</div>					
 						<div class="form-inline indent2"><input type="radio" name="optradio71" class="mceEditable" id="chk" (click)="onChange($event)">Diaphragm</div>	
 						<div class="form-inline indent2"><input type="radio" name="optradio71" class="mceEditable" id="chk" (click)="onChange($event)">Abdominal wall</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio71" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>	
+						<div class="form-inline indent2"><input type="radio" name="optradio71" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>	
 						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Intraoperative tumor spill</div>			
 						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Gross tumor rupture, preoperative</div>					
 						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined</div>					
@@ -659,10 +659,10 @@
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Hepatoblastoma, epithelial type, pleomorphic (poorly differentiated)</div>
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Hepatoblastoma, epithelial type, macrotrabecular pattern</div>
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Hepatoblastoma, epithelial type, small cell undifferentiated pattern</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio91" class="mceEditable" id="chk" (click)="onChange($event)"> Percentage of tumor with this histologic feature (if possible):<input type="text"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio91" class="mceEditable" id="chk" (click)="onChange($event)"> Percentage of tumor with this histologic feature (if possible):<input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Hepatoblastoma, mesenchymal type without teratoid features</div>
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Hepatoblastoma, mesenchymal type with teratoid features</div>
-						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Hepatoblastoma, other (specify subtypes if not included):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Hepatoblastoma, other (specify subtypes if not included):<input type="text" class="form-control"></div>
 						<i>Note: Ancillary studies (immunohistochemistry) may be performed to clarify histologic type.</i>
 					</div>
 				</div>
@@ -672,7 +672,7 @@
 						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)">No known preoperative therapy (not applicable)</div>					
 						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)">Not identified</div>
 						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)">Present</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio101" class="mceEditable" id="chk" (click)="onChange($event)"> Percent tumor necrosis:<input type="number">%</div>
+						<div class="form-inline indent2"><input type="radio" name="optradio101" class="mceEditable" id="chk" (click)="onChange($event)"> Percent tumor necrosis:<input type="number" class="form-control">%</div>
 						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined</div>
 					</div>
 				</div>
@@ -682,16 +682,16 @@
 						<u>Resection Margin</u>
 						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be assessed</div>	
 						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">Uninvolved by tumor</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange($event)">Distance of tumor from closest margin(s):<input type="number">cm</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange($event)">Specify margin(s):<input type="text"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange($event)">Distance of tumor from closest margin(s):<input type="number" class="form-control">cm</div>
+						<div class="form-inline indent2"><input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange($event)">Specify margin(s):<input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">Involved by tumor</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange($event)">Specify margin(s):<input type="text"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange($event)">Specify margin(s):<input type="text" class="form-control"></div>
 
 						<br>
 						<u>Capsular Surface</u>						
 						<div class="form-inline"><input type="radio" name="optradio12" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be assessed</div>
 						<div class="form-inline"><input type="radio" name="optradio12" class="mceEditable" id="chk" (click)="onChange($event)">Uninvolved by tumor</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio121" class="mceEditable" id="chk" (click)="onChange($event)"> Percent tumor necrosis:<input type="number">%</div>
+						<div class="form-inline indent2"><input type="radio" name="optradio121" class="mceEditable" id="chk" (click)="onChange($event)"> Percent tumor necrosis:<input type="number" class="form-control">%</div>
 						<div class="form-inline"><input type="radio" name="optradio12" class="mceEditable" id="chk" (click)="onChange($event)">Involved by tumor</div>
 					</div>
 				</div>
@@ -718,23 +718,23 @@
 						<div class="form-inline"><input type="radio" name="optradio15" class="mceEditable" id="chk" (click)="onChange($event)">No nodes submitted or found</div>	
 
 						<u>Number of Lymph Nodes Examined</u>				
-						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text"></div>
-						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text" class="form-control"></div>
+						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text" class="form-control"></div>
 
 						<br>
 						<u>Number of Lymph Nodes Involved</u>
-						<div class="form-inline"><input type="radio" name="optradio17" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text"></div>
-						<div class="form-inline indent2"><input type="radio" name="optradio171" class="mceEditable" id="chk" (click)="onChange($event)">Specify site(s), if known:<input type="text"></div>
-						<div class="form-inline indent2"><input type="radio" name="optradio171" class="mceEditable" id="chk" (click)="onChange($event)"> Histologic type present (specify):<input type="text"></div>
-						<div class="form-inline"><input type="radio" name="optradio17" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio17" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text" class="form-control"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio171" class="mceEditable" id="chk" (click)="onChange($event)">Specify site(s), if known:<input type="text" class="form-control"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio171" class="mceEditable" id="chk" (click)="onChange($event)"> Histologic type present (specify):<input type="text" class="form-control"></div>
+						<div class="form-inline"><input type="radio" name="optradio17" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">Distant Metastases (required only if confirmed pathologically in this case) (Note E)</h4>
 					<div class="itemgroup">
 						<div class="form-inline"><input type="radio" name="optradio18" class="mceEditable" id="chk" (click)="onChange($event)">Present (includes metastasis to lymph nodes in the following locations: inferior phrenic, distal to hilum, hepatoduodenal ligament, or caval region)</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio181" class="mceEditable" id="chk" (click)="onChange($event)"> Specify site(s), if known:<input type="text"></div>
-						<div class="form-inline indent2"><input type="radio" name="optradio181" class="mceEditable" id="chk" (click)="onChange($event)"> Histologic type present (specify):<input type="text"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio181" class="mceEditable" id="chk" (click)="onChange($event)"> Specify site(s), if known:<input type="text" class="form-control"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio181" class="mceEditable" id="chk" (click)="onChange($event)"> Histologic type present (specify):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -764,12 +764,12 @@
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">+ Additional Pathologic Findings (select all that apply) (Note G)</h4>
 					<div class="itemgroup">
-						<div class="form-inline"><input type="radio" name="optradio20" class="mceEditable" id="chk" (click)="onChange($event)">No background liver available for evaluation (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio20" class="mceEditable" id="chk" (click)="onChange($event)">No background liver available for evaluation (explain):<input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio20" class="mceEditable" id="chk" (click)="onChange($event)">None identified</div>
 						<div class="form-inline"><input type="radio" name="optradio20" class="mceEditable" id="chk" (click)="onChange($event)">Cirrhosis/fibrosis</div>
 						<div class="form-inline"><input type="radio" name="optradio20" class="mceEditable" id="chk" (click)="onChange($event)">Iron overload</div>
-						<div class="form-inline"><input type="radio" name="optradio20" class="mceEditable" id="chk" (click)="onChange($event)">Hepatitis (specify type):<input type="text"></div>
-						<div class="form-inline"><input type="radio" name="optradio20" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio20" class="mceEditable" id="chk" (click)="onChange($event)">Hepatitis (specify type):<input type="text" class="form-control"></div>
+						<div class="form-inline"><input type="radio" name="optradio20" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -795,7 +795,7 @@
 						<div class="form-inline indent2"><input type="radio" name="optradio221" class="mceEditable" id="chk" (click)="onChange($event)">Positive (nuclear)</div>
 						<div class="form-inline indent2"><input type="radio" name="optradio221" class="mceEditable" id="chk" (click)="onChange($event)">Negative (nuclear)</div>
 
-						<div class="form-inline"><input type="radio" name="optradio22" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio22" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 			</div>
@@ -831,7 +831,7 @@
 						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk" (click)="onChange($event)"> Retroperitoneal, nonadrenal</div>
 						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk" (click)="onChange($event)"> Thoracic paraspinal</div>
 						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk" (click)="onChange($event)"> Cervical region</div>
-						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk" (click)="onChange($event)"> Other (specify):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk" (click)="onChange($event)"> Other (specify):<input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio1" class="mceEditable" id="chk" (click)="onChange($event)"> Not specified</div>
 					</div>
 				</div>
@@ -840,16 +840,16 @@
 					<div class="itemgroup">
 						<div class="form-inline"><input type="radio" name="optradio2" class="mceEditable" id="chk" (click)="onChange($event)"> Resection</div>						
 						<div class="form-inline"><input type="radio" name="optradio2" class="mceEditable" id="chk" (click)="onChange($event)"> Incisional biopsy</div>
-						<div class="form-inline"><input type="radio" name="optradio2" class="mceEditable" id="chk" (click)="onChange($event)"> Other (specify):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio2" class="mceEditable" id="chk" (click)="onChange($event)"> Other (specify):<input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio2" class="mceEditable" id="chk" (click)="onChange($event)"> Not specified</div>
 					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">Tumor Size</h4>
 					<div class="itemgroup">
-						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension:<input type="number">cm</div>
-						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)"> Additional dimensions:<input type="number">*<input type="number">cm</div>
-						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension:<input type="number" class="form-control">cm</div>
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)"> Additional dimensions:<input type="number" class="form-control">*<input type="number" class="form-control">cm</div>
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -865,7 +865,7 @@
 					<div class="itemgroup">
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Neuroblastoma</div>					
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Ganglioneuroblastoma</div>					
-						<div class="form-inline indent2"><input type="radio" name="optradio51" class="mceEditable" id="chk" (click)="onChange($event)">Nodular subtype # (specify number of nodules):<input type="text"></div>					
+						<div class="form-inline indent2"><input type="radio" name="optradio51" class="mceEditable" id="chk" (click)="onChange($event)">Nodular subtype # (specify number of nodules):<input type="text" class="form-control"></div>					
 						<div class="form-inline indent2"><input type="radio" name="optradio51" class="mceEditable" id="chk" (click)="onChange($event)">Intermixed subtype</div>	
 
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Ganglioneuroma</div>	
@@ -873,7 +873,7 @@
 						<div class="form-inline indent2"><input type="radio" name="optradio51" class="mceEditable" id="chk" (click)="onChange($event)">Mature</div>	
 
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Neuroblastic tumor, unclassifiable</div>	
-						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>
 						<i># Note: For nodular (composite) ganglioneuroblastomas with more than 1 nodule, degree of differentiation and mitotickaryorrhectic
 							index (MKI) must be given for each nodule. Please indicate the differentiation and MKI for the least favorable
 						nodule in the case summary below. Classification of additional nodules can be described in the Comment.</i>				
@@ -885,7 +885,7 @@
 						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Undifferentiated</div>					
 						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Poorly differentiated</div>					
 						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Differentiating</div>	
-						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>	
+						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>	
 						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Not applicable</div>
 					</div>
 				</div>
@@ -895,7 +895,7 @@
 						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)"> Low (<100 per 5000 cells; <2%) </div>					
 						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)"> Intermediate (100-200 per 5000 cells; 2%-4%) </div>	
 						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)"> High (>200 per 5000 cells; >4%) </div>	
-						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>	
+						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>	
 						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Not applicable</div>
 					</div>
 				</div>
@@ -913,8 +913,8 @@
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">No known preoperative therapy (not applicable)</div>	
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Not identified</div>
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Present</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio91" class="mceEditable" id="chk" (click)="onChange($event)"> Percent tumor necrosis:<input type="number">%</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio91" class="mceEditable" id="chk" (click)="onChange($event)"> Percent therapy-induced cytodifferentiation:<input type="number">%</div>
+						<div class="form-inline indent2"><input type="radio" name="optradio91" class="mceEditable" id="chk" (click)="onChange($event)"> Percent tumor necrosis:<input type="number" class="form-control">%</div>
+						<div class="form-inline indent2"><input type="radio" name="optradio91" class="mceEditable" id="chk" (click)="onChange($event)"> Percent therapy-induced cytodifferentiation:<input type="number" class="form-control">%</div>
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined</div>
 					</div>
 				</div>
@@ -961,7 +961,7 @@
 					<h4 class="" (click)="onCollapse($event)">Tumor Extent (Note H)</h4>
 					<div class="itemgroup">
 						<u>Primary Tumor</u>
-						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>	
+						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>	
 						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">Encapsulated</div>			
 						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">Extracapsular extension without adjacent organ involvement</div>			
 						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">Extension into adjacent organs</div>			
@@ -972,18 +972,18 @@
 						<div class="form-inline"><input type="radio" name="optradio12" class="mceEditable" id="chk" (click)="onChange($event)">No nodes submitted or found</div>	
 
 						<i>Number of Lymph Nodes Examined</i>
-						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text"></div>
-						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text" class="form-control"></div>
+						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text" class="form-control"></div>
 
 						<i>Number of Lymph Nodes Involved</i>
-						<div class="form-inline"><input type="radio" name="optradio14" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text"></div>
-						<div class="form-inline indent2"><input type="radio" name="optradio141" class="mceEditable" id="chk" (click)="onChange($event)">Specify site (if known):<input type="text"></div>
-						<div class="form-inline"><input type="radio" name="optradio14" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio14" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text" class="form-control"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio141" class="mceEditable" id="chk" (click)="onChange($event)">Specify site (if known):<input type="text" class="form-control"></div>
+						<div class="form-inline"><input type="radio" name="optradio14" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text" class="form-control"></div>
 
 						<br>
 						<u>Distant Metastasis (required only if confirmed pathologically in this case)</u>
 						<div class="form-inline"><input type="radio" name="optradio15" class="mceEditable" id="chk" (click)="onChange($event)">Present</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio151" class="mceEditable" id="chk" (click)="onChange($event)">Specify site(s), if known:<input type="text"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio151" class="mceEditable" id="chk" (click)="onChange($event)">Specify site(s), if known:<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -998,13 +998,13 @@
 						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)">Pending</div>
 
 						<br>
-						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)"> Other (specify):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)"> Other (specify):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">+ Additional Pathologic Findings (Notes J and K)</h4>
 					<div class="itemgroup">
-						<div class="form-inline"><input type="radio" name="optradio17" class="mceEditable" id="chk" (click)="onChange($event)"> Specify:<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio17" class="mceEditable" id="chk" (click)="onChange($event)"> Specify:<input type="text" class="form-control"></div>
 					</div>
 				</div>					
 			</div>
@@ -1049,7 +1049,7 @@
 						<div class="form-inline"><input type="radio" name="optradio2" class="mceEditable" id="chk" (click)="onChange($event)"> Amputation (specify type):</div>
 
 						<br>
-						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)"> Other (specify): <input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)"> Other (specify): <input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)"> Not specified</div>
 					</div>
 				</div>
@@ -1073,16 +1073,16 @@
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Genitourinary (not bladder/prostate)</div>
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Head and neck (excluding parameningeal)</div>
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Orbit</div>
-						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Other(s) (includes trunk, retroperitoneum, etc) (specify):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Other(s) (includes trunk, retroperitoneum, etc) (specify):<input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio5" class="mceEditable" id="chk" (click)="onChange($event)">Not specified</div>
 					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">Tumor Size</h4>
 					<div class="itemgroup">
-						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension:<input type="number">cm</div>
-						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)"> Additional dimensions:<input type="number">*<input type="number">cm</div>
-						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension:<input type="number" class="form-control">cm</div>
+						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)"> Additional dimensions:<input type="number" class="form-control">*<input type="number" class="form-control">cm</div>
+						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -1092,7 +1092,7 @@
 						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Alveolar</div>					
 						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Spindle cell and sclerosing</div>					
 						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Ectomesenchymoma</div>	
-						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>		
+						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>		
 						<div class="form-inline"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Rhabdomyosarcoma, not otherwise specified (NOS)</div>	
 					</div>
 				</div>
@@ -1111,17 +1111,17 @@
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">Not performed</div>					
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">No FOXO1 rearrangement</div>					
 						<div class="form-inline"><input type="radio" name="optradio9" class="mceEditable" id="chk" (click)="onChange($event)">FOXO1 rearrangement present (select all that apply)</div>					
-						<div class="form-inline indent2"><input type="radio" name="optradio91" class="mceEditable" id="chk" (click)="onChange($event)">Amplification status (ie, fluorescence in situ hybridization [FISH]) (specify):<input type="text"></div>					
+						<div class="form-inline indent2"><input type="radio" name="optradio91" class="mceEditable" id="chk" (click)="onChange($event)">Amplification status (ie, fluorescence in situ hybridization [FISH]) (specify):<input type="text" class="form-control"></div>					
 						<div class="form-inline indent2"><input type="radio" name="optradio91" class="mceEditable" id="chk" (click)="onChange($event)">PAX3</div>		
 						<div class="form-inline indent2"><input type="radio" name="optradio91" class="mceEditable" id="chk" (click)="onChange($event)">PAX7</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio91" class="mceEditable" id="chk" (click)="onChange($event)">Other (eg, PAX3-NCOA1 or other variant translocation) (specify):<input type="text"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio91" class="mceEditable" id="chk" (click)="onChange($event)">Other (eg, PAX3-NCOA1 or other variant translocation) (specify):<input type="text" class="form-control"></div>
 
 						<br>
 						<u>+ Method</u>	
 						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)">Karyotype</div>	
 						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)">FISH</div>	
 						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)">Reverse transcriptase polymerase chain reaction (RT-PCR)</div>	
-						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -1129,11 +1129,11 @@
 					<div class="itemgroup">
 						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be assessed</div>
 						<div class="form-inline indent2"><input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange($event)">Uninvolved by tumor</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange($event)">Distance of tumor from closest margin:<input type="number">cm</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange($event)">Specify margin:<input type="text"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange($event)">Distance of tumor from closest margin:<input type="number" class="form-control">cm</div>
+						<div class="form-inline indent2"><input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange($event)">Specify margin:<input type="text" class="form-control"></div>
 
 						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">Involved by tumor</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange($event)">Specify margin:<input type="text"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange($event)">Specify margin:<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -1143,20 +1143,20 @@
 
 						<br>
 						<i>Number of Lymph Nodes Examined</i>					
-						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text"></div>
-						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text" class="form-control"></div>
+						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text" class="form-control"></div>
 
 						<br>
 						<i>Number of Lymph Nodes Involved</i>					
-						<div class="form-inline"><input type="radio" name="optradio14" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text"></div>
-						<div class="form-inline"><input type="radio" name="optradio14" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio14" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text" class="form-control"></div>
+						<div class="form-inline"><input type="radio" name="optradio14" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">Distant Metastasis (required only if confirmed pathologically in this case)</h4>
 					<div class="itemgroup">
 						<div class="form-inline"><input type="radio" name="optradio15" class="mceEditable" id="chk" (click)="onChange($event)">Present</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio151" class="mceEditable" id="chk" (click)="onChange($event)">Specify site(s), if known:<input type="text"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio151" class="mceEditable" id="chk" (click)="onChange($event)">Specify site(s), if known:<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -1165,8 +1165,8 @@
 						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)">No known preoperative therapy (not applicable)</div>	
 						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)">Not identified</div>				
 						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)">Present</div>				
-						<div class="form-inline indent2"><input type="radio" name="optradio161" class="mceEditable" id="chk" (click)="onChange($event)"> Percent tumor necrosis:<input type="number">%</div>				
-						<div class="form-inline indent2"><input type="radio" name="optradio161" class="mceEditable" id="chk" (click)="onChange($event)"> Percent therapy-induced cytodifferentiation:<input type="number">%</div>
+						<div class="form-inline indent2"><input type="radio" name="optradio161" class="mceEditable" id="chk" (click)="onChange($event)"> Percent tumor necrosis:<input type="number" class="form-control">%</div>				
+						<div class="form-inline indent2"><input type="radio" name="optradio161" class="mceEditable" id="chk" (click)="onChange($event)"> Percent therapy-induced cytodifferentiation:<input type="number" class="form-control">%</div>
 						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined</div>				
 					</div>
 				</div>
@@ -1178,7 +1178,7 @@
 							protocol may not be applicable to some situations (eg, group IIIA). If applicable, the appropriate stage group may be
 						assigned by the pathologist.</i>
 						<div class="form-inline"><input type="radio" name="optradio17" class="mceEditable" id="chk" (click)="onChange($event)">Not applicable</div>					
-						<div class="form-inline"><input type="radio" name="optradio17" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be assessed (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio17" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be assessed (explain):<input type="text" class="form-control"></div>
 
 						<br>
 						<u>+ Group I</u>
@@ -1207,7 +1207,7 @@
 						<i>Note: Staging is based on pretreatment tumor characteristics. Clinical information required to definitively assign stage (eg,
 						nodal status or distant metastatic disease) may not be available to the pathologist.</i>
 						<div class="form-inline"><input type="radio" name="optradio22" class="mceEditable" id="chk" (click)="onChange($event)">Not applicable</div>					
-						<div class="form-inline"><input type="radio" name="optradio22" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be assessed (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio22" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be assessed (explain):<input type="text" class="form-control"></div>
 
 						<br>
 						<u>+ Stage I</u>
@@ -1241,7 +1241,7 @@
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">+ Additional Pathologic Findings (Note I)</h4>
 					<div class="itemgroup">
-						<div class="form-inline"><input type="radio" name="optradio23" class="mceEditable" id="chk" (click)="onChange($event)"> Specify:<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio23" class="mceEditable" id="chk" (click)="onChange($event)"> Specify:<input type="text" class="form-control"></div>
 					</div>
 				</div>
 			</div>
@@ -1284,14 +1284,14 @@
 						<div class="form-inline"><input type="radio" name="optradio2" class="mceEditable" id="chk" (click)="onChange($event)"> Radical nephrectomy</div>
 
 						<br>
-						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)"> Other (specify): <input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)"> Other (specify): <input type="text" class="form-control"></div>
 						<div class="form-inline"><input type="radio" name="optradio3" class="mceEditable" id="chk" (click)="onChange($event)"> Not specified</div>
 					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">Specimen Weight (applicable to resection specimens only) (Note B)</h4>
 					<div class="itemgroup">
-						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Nephrectomy weight:<input type="number">g</div>
+						<div class="form-inline"><input type="radio" name="optradio4" class="mceEditable" id="chk" (click)="onChange($event)">Nephrectomy weight:<input type="number" class="form-control">g</div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -1305,15 +1305,15 @@
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">Tumor Size (Note B)</h4>
 					<div class="itemgroup">
-						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension:<input type="number">cm</div>
-						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)"> Additional dimensions:<input type="number">*<input type="number">cm</div>
-						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension:<input type="number" class="form-control">cm</div>
+						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)"> Additional dimensions:<input type="number" class="form-control">*<input type="number" class="form-control">cm</div>
+						<div class="form-inline"><input type="radio" name="optradio6" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>
 
 						<br>
 						For specimens with multiple tumors, specify greatest dimension of each additional tumor:
-						<div class="form-inline indent2"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension tumor #2:<input type="number">cm</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension tumor #3:<input type="number">cm</div>
-						<div class="form-inline indent2"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension tumor #2:<input type="number" class="form-control">cm</div>
+						<div class="form-inline indent2"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Greatest dimension tumor #3:<input type="number" class="form-control">cm</div>
+						<div class="form-inline indent2"><input type="radio" name="optradio7" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -1321,8 +1321,8 @@
 					<div class="itemgroup">
 						<div class="form-inline"><input type="radio" name="optradio8" class="mceEditable" id="chk" (click)="onChange($event)">Unifocal</div>					
 						<div class="form-inline"><input type="radio" name="optradio8" class="mceEditable" id="chk" (click)="onChange($event)">Multifocal</div>	
-						<div class="form-inline indent2"><input type="radio" name="optradio81" class="mceEditable" id="chk" (click)="onChange($event)">Number of tumors in specimen (specify):<input type="text"></div>					
-						<div class="form-inline"><input type="radio" name="optradio8" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>					
+						<div class="form-inline indent2"><input type="radio" name="optradio81" class="mceEditable" id="chk" (click)="onChange($event)">Number of tumors in specimen (specify):<input type="text" class="form-control"></div>					
+						<div class="form-inline"><input type="radio" name="optradio8" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>					
 					</div>
 				</div>
 				<div class="subgroups">
@@ -1338,7 +1338,7 @@
 						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)">Tumor minimally extends into renal sinus soft tissue</div>			
 						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)">Tumor more than minimally involves renal sinus soft tissue</div>
 						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)">Tumor involves lymph-vascular spaces in the renal sinus</div>
-						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio10" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>
 
 						<br>
 						<u>Gerota’s Fascia</u>
@@ -1356,11 +1356,11 @@
 						<u>Renal Capsule</u>
 						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Extension beyond renal capsule present</div>			
 						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">No extension beyond renal capsule</div>			
-						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio13" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined (explain):<input type="text" class="form-control"></div>
 
 						<br>
 						<u>Adjacent Organ Involvement</u>
-						<div class="form-inline"><input type="radio" name="optradio14" class="mceEditable" id="chk" (click)="onChange($event)">Tumor extension into adjacent organ present (specify organ:<input type="text">)</div>
+						<div class="form-inline"><input type="radio" name="optradio14" class="mceEditable" id="chk" (click)="onChange($event)">Tumor extension into adjacent organ present (specify organ:<input type="text" class="form-control">)</div>
 						<div class="form-inline"><input type="radio" name="optradio14" class="mceEditable" id="chk" (click)="onChange($event)">No tumor extension into adjacent organs identified</div>			
 						<div class="form-inline"><input type="radio" name="optradio14" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be determined</div>			
 					</div>
@@ -1370,11 +1370,11 @@
 					<div class="itemgroup">
 						<div class="form-inline"><input type="radio" name="optradio15" class="mceEditable" id="chk" (click)="onChange($event)">Cannot be assessed</div>				
 						<div class="form-inline"><input type="radio" name="optradio15" class="mceEditable" id="chk" (click)="onChange($event)">Uninvolved by tumor</div>					
-						<div class="form-inline indent2"><input type="radio" name="optradio151" class="mceEditable" id="chk" (click)="onChange($event)"> Distance of tumor from closest margin(s):<input type="number">cm</div>					
-						<div class="form-inline indent2"><input type="radio" name="optradio151" class="mceEditable" id="chk" (click)="onChange($event)"> Specify margin:<input type="text"></div>	
+						<div class="form-inline indent2"><input type="radio" name="optradio151" class="mceEditable" id="chk" (click)="onChange($event)"> Distance of tumor from closest margin(s):<input type="number" class="form-control">cm</div>					
+						<div class="form-inline indent2"><input type="radio" name="optradio151" class="mceEditable" id="chk" (click)="onChange($event)"> Specify margin:<input type="text" class="form-control"></div>	
 
 						<div class="form-inline"><input type="radio" name="optradio15" class="mceEditable" id="chk" (click)="onChange($event)">Involved by tumor</div>			
-						<div class="form-inline indent2"><input type="radio" name="optradio151" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text"></div>
+						<div class="form-inline indent2"><input type="radio" name="optradio151" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -1387,8 +1387,8 @@
 						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)">Congenital mesoblastic nephroma (cellular, classic, or mixed)</div>
 						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)">Clear cell sarcoma</div>
 						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)">Rhabdoid tumor</div>
-						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text"></div>
-						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)">Malignant neoplasm, type cannot be determined (explain):<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>
+						<div class="form-inline"><input type="radio" name="optradio16" class="mceEditable" id="chk" (click)="onChange($event)">Malignant neoplasm, type cannot be determined (explain):<input type="text" class="form-control"></div>
 					</div>
 				</div>
 				<div class="subgroups">
@@ -1432,14 +1432,14 @@
 
 						<br>
 						<i>Number of Lymph Nodes Involved</i>
-						<div class="form-inline"><input type="radio" name="optradio20" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text"></div>	
-						<div class="form-inline"><input type="radio" name="optradio20" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text"></div>	
+						<div class="form-inline"><input type="radio" name="optradio20" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text" class="form-control"></div>	
+						<div class="form-inline"><input type="radio" name="optradio20" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text" class="form-control"></div>	
 
 						<br>
 						<i>Number of Lymph Nodes Involved</i>
-						<div class="form-inline"><input type="radio" name="optradio21" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text"></div>	
-						<div class="form-inline indent2"><input type="radio" name="optradio211" class="mceEditable" id="chk" (click)="onChange($event)">Specify site(s) if known:<input type="text"></div>	
-						<div class="form-inline"><input type="radio" name="optradio21" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text"></div>		
+						<div class="form-inline"><input type="radio" name="optradio21" class="mceEditable" id="chk" (click)="onChange($event)">Specify:<input type="text" class="form-control"></div>	
+						<div class="form-inline indent2"><input type="radio" name="optradio211" class="mceEditable" id="chk" (click)="onChange($event)">Specify site(s) if known:<input type="text" class="form-control"></div>	
+						<div class="form-inline"><input type="radio" name="optradio21" class="mceEditable" id="chk" (click)="onChange($event)">Number cannot be determined (explain):<input type="text" class="form-control"></div>		
 					</div>
 				</div>
 				<div class="subgroups">
@@ -1484,14 +1484,14 @@
 						<div class="form-inline"><input type="radio" name="optradio28" class="mceEditable" id="chk" (click)="onChange($event)">Stage V: Bilateral renal involvement at diagnosis</div>
 						<i>Note: Each side should be staged separately in separate case summaries, according to above criteria, as
 						stage I through IV.</i>
-						<div class="form-inline indent2"><input type="radio" name="optradio281" class="mceEditable" id="chk" (click)="onChange($event)">Specify (both): Right kidney stage:<input type="text"></div>						
-						<div class="form-inline indent2" style="margin-left: 220px;"><input type="radio" name="optradio281" class="mceEditable" id="chk" (click)="onChange($event)">Left kidney stage:<input type="text"></div>		
+						<div class="form-inline indent2"><input type="radio" name="optradio281" class="mceEditable" id="chk" (click)="onChange($event)">Specify (both): Right kidney stage:<input type="text" class="form-control"></div>						
+						<div class="form-inline indent2" style="margin-left: 220px;"><input type="radio" name="optradio281" class="mceEditable" id="chk" (click)="onChange($event)">Left kidney stage:<input type="text" class="form-control"></div>		
 					</div>
 				</div>
 				<div class="subgroups">
 					<h4 class="" (click)="onCollapse($event)">+ Additional Pathologic Findings (Notes G and H)</h4>
 					<div class="itemgroup">
-						<div class="form-inline"><input type="radio" name="optradio24" class="mceEditable" id="chk" (click)="onChange($event)"> Specify:<input type="text"></div>
+						<div class="form-inline"><input type="radio" name="optradio24" class="mceEditable" id="chk" (click)="onChange($event)"> Specify:<input type="text" class="form-control"></div>
 					</div>
 				</div>
 			</div>

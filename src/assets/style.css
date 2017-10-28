@@ -8,8 +8,28 @@
 #convertData .subgroups{ padding: 7px 5px; }
 #convertData .subgroups .itemgroup{ padding: 5px 0; }
 #convertData .subgroups .itemgroup>div{ padding: 5px 0; }
-#convertData .subgroups .itemgroup input[type="text"]{ margin: 0 10px; }
-#convertData .subgroups .itemgroup input[type="radio"]{ margin-right: 10px; }
+
+#convertData .subgroups h4{
+	cursor: pointer;
+}
+#convertData .subgroups h4:hover{
+	text-decoration: underline;
+}
+
+#convertData .subgroups .itemgroup input[type="radio"]{ 
+	margin-right: 10px; 
+	cursor: pointer;
+}
+#convertData .subgroups .itemgroup input[type="text"]{ 
+	margin: 0 10px; 
+	width: 50%;
+}
+#convertData .subgroups .itemgroup input[type="number"]{
+	margin: 0 5px;
+	width: 100px;
+	text-align: center;
+}
+
 #convertData .subgroups .itemgroup .indent1 { 
 	margin: 5px 0 5px 50px; 
 	display: none;
@@ -21,27 +41,19 @@
 #convertData .comment{ 
 	font-size: 14px; 
 	display: block;
-	margin: 10px 0 0 0;
-}
-#convertData .comments{ 
-	width: 90%; 
-	margin-left: 40px;
-}
-#convertData .mceEditable{
-	margin: 0 10px;
-	text-decoration: underline;
-}
-#convertData input[type="radio"], #convertData h4 a{
-	cursor: pointer;
+	margin-top: 10px;
 }
 
-.mce-content-body *{
-	outline: none !important;
-}
 
-.mce-edit-focus {
-	outline: none !important;
-}
+
+/* #chk:checked ~ u{
+	display: inline;
+} */
+
+/* #chk:checked ~ input[type="text"], input[type="number"]{
+	display: inline;
+} */
+
 
 .bfooter{
 	position:fixed;
@@ -49,54 +61,3 @@
 	right:5%;
 	display:none;
 }
-#convertData .form-inline u{
-	
-	border-bottom: 1px solid #1e90ff;
-	text-decoration: none;
-}
-
-/* #chk:checked ~ u{
-	display: inline;
-} */
-
-#convertData .selection{
-	margin: 3px 10px 0 25px;
-	border: none !important;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-}
-#convertData .selection::after{
-	border: none !important;
-	box-sizing: inherit;
-}
-
-#convertData select, label, input{
-	text-indent: 5px;
-}
-#convertData select:hover{
-	cursor: pointer;
-}
-
-#add{
-	display: none;
-}
-
-#convertData .groups .subgroups h4{
-	cursor: pointer;
-}
-#convertData .groups .subgroups h4:hover{
-	text-decoration: underline;
-}
-
-#convertData input[type="number"]{
-	margin: 0 5px 0 5px;
-	width: 100px;
-	text-align: center;
-}
-#convertData input[type="text"]{
-	width: 50%;
-}
-
-/* #chk:checked ~ input[type="text"], input[type="number"]{
-	display: inline;
-} */

@@ -39,14 +39,14 @@ export class CapsComponent implements AfterViewInit, OnInit, OnDestroy {
 	}
 
 	ngAfterViewInit() {
-		// tinymce.init({
-		// 	selector: '#convertData',
-	    //     toolbar: false,
-	    //     menubar: false,
-	    //     statusbar: false,
-		// 	inline: true,
-		// 	plugins: 'noneditable'
-		// });
+		tinymce.init({
+			selector: '#editWord',
+	        toolbar: false,
+	        menubar: false,
+	        statusbar: false,
+			inline: true,
+			plugins: 'noneditable'
+		});
 	}
 
 	ngOnInit() {		
@@ -62,23 +62,20 @@ export class CapsComponent implements AfterViewInit, OnInit, OnDestroy {
 
 	onCollapse(event){
 		var leng = event.target.parentElement.children[1].children.length;
+		// var childs = event.target.parentElement.children[1].children;
+		// for(let i=0; i<childs.leng; i++){
+		// 	var subchilds = childs.children;
+		// 	childs[i].style.display = 'block';
+		// }		
 		for(let i=0; i<leng; i++){
 			event.target.parentElement.children[1].children[i].style.display = 'block';
 		}
 	}
 
 	onChange(event){
-		var txt = event.target.parentElement.querySelector('input[type="text"]');
-		var num = event.target.parentElement.querySelector('input[type="number"]');
-		// if(txt){			
-		// 	txt.attributes[1].value = true;
-		// }
-		// if(num){
-		// 	num.attributes[1].value = true;
-		// }
-		
 		var selfElement = event.target.parentElement;
 		var childElement = selfElement.querySelectorAll('.indent1');
+		var indent2 = selfElement.querySelectorAll('.indent2');
 		var pElement = event.target.parentElement.parentElement;
 		var arr = pElement.children;
 		var n = arr.length;
@@ -97,8 +94,22 @@ export class CapsComponent implements AfterViewInit, OnInit, OnDestroy {
 		}
 	}
 
+	onChange1(event){
+		var selfElement = event.target.parentElement;
+		var pElement = event.target.parentElement.parentElement;
+		var arr = pElement.children;
+		var n = arr.length;
+		for(let i=0; i<n; i++){
+			if(selfElement.attributes != arr[i].attributes){
+				arr[i].style.display = 'none';				
+			} else {
+				selfElement.style.display = 'block';
+			}
+		}
+	}
+
 	public generateDoc(){		
-		let content = tinymce.get('convertData').getContent();		
+		let content = tinymce.get('editWord').getContent();		
 		let converted = htmlDocx.asBlob(content);	
 		this.file_name = this.id + '.docx';	
 		fileSaver.saveAs(converted, this.file_name);

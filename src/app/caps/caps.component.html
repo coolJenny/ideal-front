@@ -126,12 +126,12 @@
 						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">Pending</div>
 						<div class="form-inline">
 							<input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">EWSR1 rearrangement present
-							<div class="form-inline indent1"><input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange($event)">Fusion partner not known</div>
+							<div class="form-inline indent1"><input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange1($event)">Fusion partner not known</div>
 							<div class="form-inline indent1">
-								<input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange($event)">Fusion partner known
-								<div class="form-inline indent2"><input type="radio" name="optradio1112" class="mceEditable" id="chk" (click)="onChange($event)">FLI1</div>
-								<div class="form-inline indent2"><input type="radio" name="optradio1112" class="mceEditable" id="chk" (click)="onChange($event)">ERG</div>
-								<div class="form-inline indent2"><input type="radio" name="optradio1112" class="mceEditable" id="chk" (click)="onChange($event)">Other (specify):<input type="text" class="form-control"></div>
+								<input type="radio" name="optradio111" class="mceEditable" id="chk" (click)="onChange1($event)">Fusion partner known
+								<div class="form-inline indent2"><input type="radio" name="optradio1112" class="mceEditable" id="chk" (click)="onChange2($event)">FLI1</div>
+								<div class="form-inline indent2"><input type="radio" name="optradio1112" class="mceEditable" id="chk" (click)="onChange2($event)">ERG</div>
+								<div class="form-inline indent2"><input type="radio" name="optradio1112" class="mceEditable" id="chk" (click)="onChange2($event)">Other (specify):<input type="text" class="form-control"></div>
 							</div>
 						</div>						
 						<div class="form-inline"><input type="radio" name="optradio11" class="mceEditable" id="chk" (click)="onChange($event)">Other (non-EWSR1 variant translocation) (specify):<input type="text" class="form-control"></div>
@@ -139,7 +139,7 @@
 					</div>
 				</div>
 				<div class="subgroups">
-					<h4 class="" (click)="onCollapse($event)">+ Method</h4>
+					<p class="cursor" (click)="onCollapse($event)">+ Method</p>
 					<div class="itemgroup">
 						<div class="form-inline"><input type="radio" name="optradio12" class="mceEditable" id="chk" (click)="onChange($event)">Conventional karyotyping</div>
 						<div class="form-inline"><input type="radio" name="optradio12" class="mceEditable" id="chk" (click)="onChange($event)">Fluorescent in situ hybridization (FISH)</div>
@@ -150,7 +150,7 @@
 			</div>
 			<div class="mceNonEditable">
 				<h4>+ Comment(s)</h4>
-				<input type="text" style="margin-left: 20px; width: 96%">
+				<input class="form-control" type="text" style="margin-left: 20px; width: 96%">
 				<i class="comment">Data elements preceded by symbol(+) are not required. However, these elements may be
 				clinically important but are not yet validated or regularly used in patient management.</i>
 			</div>			
@@ -1507,7 +1507,7 @@
 
 
 <div class="bfooter">
-	<button id="convertDoc" (click)="generateDoc()" class="btn btn-info active" data-toggle="tooltip" title="Word Answer">Preview</button>
+	<button id="convertDoc" class="btn btn-info active" data-toggle="modal" data-target="#myModal">Preview</button>
 	<button id="convertPdf" (click)="generatePdf()" class="btn btn-info active" data-toggle="tooltip" title="PDF Answer">PDF</button>
 	<a *ngIf="id == 1" target="_blank" href="/assets/references/Ewing Sarcoma Biopsy CAP.pdf" class="btn btn-info active" data-toggle="tooltip" title="Entire CAP Protocol">CAP</a>
 	<a *ngIf="id == 2" target="_blank" href="/assets/references/Ewing Sarcoma Resection CAP.pdf" class="btn btn-info active" data-toggle="tooltip" title="Entire CAP Protocol">CAP</a>
@@ -1516,4 +1516,23 @@
 	<a *ngIf="id == 5" target="_blank" href="/assets/references/Neuroblastoma CAP.pdf" class="btn btn-info active" data-toggle="tooltip" title="Entire CAP Protocol">CAP</a>
 	<a *ngIf="id == 6" target="_blank" href="/assets/references/Rhabdomyosarcoma CAP.pdf" class="btn btn-info active" data-toggle="tooltip" title="Entire CAP Protocol">CAP</a>
 	<a *ngIf="id == 7" target="_blank" href="/assets/references/Kidney tumors CAP.pdf" class="btn btn-info active" data-toggle="tooltip" title="Entire CAP Protocol">CAP</a>
+</div>
+
+<div id="myModal" class="modal fade" role="dialog" data-backdrop="static">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" >&times;</button>
+				<h4 class="modal-title">Preview Word Document</h4>
+			</div>
+			<div class="modal-body" id="editWord">
+				<h3 class="text-center ">{{cap_title[0]}}</h3>
+				<p>Select a single response unless otherwise indicated.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-success" (click)="generateDoc()">Download</button>
+				<button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
 </div>

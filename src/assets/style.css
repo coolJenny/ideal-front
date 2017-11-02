@@ -43,6 +43,22 @@
 	display: block;
 	margin-top: 10px;
 }
+.cursor:hover{ 
+	cursor: pointer;
+}
+.cursor{
+	margin-bottom: 0px; 
+}
+
+.modal-header{
+	background-color: #5cb85c;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+.modal-dialog{
+	width: 1200px;
+	padding-top: 30px;
+}
 
 
 

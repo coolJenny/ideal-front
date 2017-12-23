@@ -86,7 +86,7 @@ export class CapsComponent implements AfterViewInit, OnInit, OnDestroy {
 				selfElement.style.display = 'block';
 				if(childElement){
 					for(let i=0; i<childElement.length; i++){
-						childElement[i].style.display = 'block';
+						childElement[i].style.display = 'block';						
 					}
 				}
 				
